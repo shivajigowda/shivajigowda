@@ -16,10 +16,10 @@ ACTIONS = ["deflect", "resolve", "automate"]
 
 
 def _hero_left(T):
-    o = [eyebrow(56, 92, "Shivaji M D · AI Solutions Engineer · Bengaluru", T["purple"], 11, 2.0)]
+    o = [eyebrow(56, 92, "Shivaji M D · Enterprise AI Solutions Advisor · Bengaluru", T["purple"], 11, 2.0)]
     P = T["purple"]
-    o.append(rich(54, 168, [[("From connectors", None)], [("that ", None), ("sync", P), (" to agents", None)],
-                            [("that ", None), ("act.", P)]], T["ink"], 54, 60))
+    o.append(rich(54, 168, [[("I turn enterprise", None)], [("context", P), (" into AI", None)],
+                            [("that ", None), ("acts.", P)]], T["ink"], 54, 60))
     s, _ = para(56, 338, "13+ years in SaaS. I take enterprise use cases from CXO discovery to production "
                 "AI agents: the context layer first, then guarded multi-agent workflows on top.",
                 T["ink2"], 16.5, 470, 25)

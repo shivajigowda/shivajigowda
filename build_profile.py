@@ -33,8 +33,8 @@ MAX_BYTES = 150 * 1024
 
 # name, builder, accessible title, description (also the README alt text)
 PANELS = [
-    ("hero", hero, "Shivaji M D, AI Solutions Engineer, Bengaluru",
-     "From connectors that sync to agents that act. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice "
+    ("hero", hero, "Shivaji M D, Enterprise AI Solutions Advisor, Bengaluru",
+     "I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice "
      "and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, "
      "resolve, automate."),
     ("metrics", metrics, "Business outcomes",
