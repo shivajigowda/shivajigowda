@@ -1,0 +1,415 @@
+{
+ "payments desk transformation": {
+  "type": "hybrid",
+  "steps": [
+   [
+    "TRIGGER",
+    "Desk agent enters the case number in the AI workspace → case fetched from the CRM"
+   ],
+   [
+    "SYSTEM",
+    "Queries the payment gateway and reservation system for payment and existing booking → status shown"
+   ],
+   [
+    "DECISION",
+    "Booking already exists? yes → step 9 / no → step 3a: payment failed? yes → [HUMAN] escalate to team lead / no → step 4"
+   ],
+   [
+    "SKILL",
+    "Searches flights on route and date, shows options → option list"
+   ],
+   [
+    "HUMAN",
+    "Agent confirms the flight, consulting the passenger if needed → selection"
+   ],
+   [
+    "SKILL",
+    "Reserves seats and enrols each passenger; applies senior discount; asks for infant allocation → enrolled passengers"
+   ],
+   [
+    "HUMAN",
+    "Agent confirms contact details ('yes') and the booking summary ('confirm') → approved summary"
+   ],
+   [
+    "SKILL",
+    "Generates payment link and sends by email and SMS; agent calls the passenger → link sent"
+   ],
+   [
+    "SYSTEM",
+    "Detects payment, retrieves booking reference, updates and closes the CRM case → closed case with audit trail"
+   ],
+   [
+    "GUARDRAIL",
+    "Payment taken but no booking, or an integration down → critical escalation to team lead and platform support in parallel"
+   ],
+   [
+    "OUTCOME",
+    "Rebooked passenger and closed case in under 5 minutes (target) → less manual system switching"
+   ]
+  ]
+ },
+ "order-to-cash SaaS support PoC": {
+  "type": "conversational",
+  "steps": [
+   [
+    "TRIGGER",
+    "User opens the embedded chat widget with a verified identity (user and tenant) → session"
+   ],
+   [
+    "USER",
+    "Asks a product, how-to or account question → request"
+   ],
+   [
+    "AGENT",
+    "Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer"
+   ],
+   [
+    "DECISION",
+    "Account-specific issue? yes → step 5 / no → step 8"
+   ],
+   [
+    "GUARDRAIL",
+    "Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope"
+   ],
+   [
+    "SKILL",
+    "Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons"
+   ],
+   [
+    "AGENT",
+    "Explains each reason then the fix → explained answer"
+   ],
+   [
+    "DECISION",
+    "User confirms it helped? yes → close without ticket / no → step 9"
+   ],
+   [
+    "HUMAN",
+    "User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket"
+   ],
+   [
+    "OUTCOME",
+    "Fewer avoidable tickets and cleaner handoffs (pilot to measure) → lower support load"
+   ]
+  ]
+ },
+ "NBFC customer support transformation": {
+  "type": "event-triggered",
+  "steps": [
+   [
+    "TRIGGER",
+    "Email lands in the service or complaints inbox → email integration creates one ticket per thread"
+   ],
+   [
+    "WORKFLOW",
+    "Fires once on ticket creation and calls the support agent → one AI action"
+   ],
+   [
+    "GUARDRAIL",
+    "Agent scans title, body, sender and display name for authority signals → authority flag"
+   ],
+   [
+    "DECISION",
+    "Authority or regulatory sender? yes → classify as complaint, zero reply, human queue / no → step 5"
+   ],
+   [
+    "AGENT",
+    "Classifies category and sub-category, applies inbox and email-type rules, searches KB, masks PII → structured output"
+   ],
+   [
+    "WORKFLOW",
+    "Sets category, sub-category, group atomically → routed ticket"
+   ],
+   [
+    "DECISION",
+    "Reply allowed and KB content found? yes → step 8 / no → fallback template or silent routing to human"
+   ],
+   [
+    "AGENT",
+    "Posts the multilingual KB reply as an external comment → customer email, stage awaiting customer"
+   ],
+   [
+    "WORKFLOW",
+    "No reply within N days → resolved then closed; customer follow-ups go to humans → closed or human-owned ticket"
+   ],
+   [
+    "HUMAN",
+    "Complaints and regulator mail handled in the complaints group → human resolution"
+   ],
+   [
+    "OUTCOME",
+    "Fewer manual touches with regulator-safe automation (targets) → lower triage load"
+   ]
+  ]
+ },
+ "apparel retail AI transformation (proposal)": {
+  "type": "scheduled/batch",
+  "steps": [
+   [
+    "TRIGGER",
+    "Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls"
+   ],
+   [
+    "SYSTEM",
+    "Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data"
+   ],
+   [
+    "GUARDRAIL",
+    "Quality gate checks freshness, duplicates, missing keys and control totals → pass or block insights"
+   ],
+   [
+    "DECISION",
+    "Gate passed? yes → step 5 / no → insights blocked and data owner alerted"
+   ],
+   [
+    "SYSTEM",
+    "Maps to the common grain (SKU, pack size, channel, month) in the knowledge graph with lineage and permissions → trusted base"
+   ],
+   [
+    "AGENT",
+    "Finance and planning agents run versioned rules for price bridge, COGS, forecast and plan vs actual; model explains, drafts → draft outputs"
+   ],
+   [
+    "HUMAN",
+    "Finance and planners approve key outputs at each gate → approved figures"
+   ],
+   [
+    "SKILL",
+    "Availability control tower raises debounced alerts with causes and next actions → exceptions"
+   ],
+   [
+    "SYSTEM",
+    "Delivers via app, email, team chat, spreadsheet or PDF with data-as-of time; audit log and value ledger → governed delivery"
+   ],
+   [
+    "OUTCOME",
+    "Automated explainable monthly close and earlier stock-out flags (targets) → time and working-capital gains"
+   ]
+  ]
+ },
+ "customer-experience agent (live)": {
+  "type": "hybrid",
+  "steps": [
+   [
+    "TRIGGER",
+    "Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory"
+   ],
+   [
+    "AGENT",
+    "Understands the request in natural language and picks a skill → skill call"
+   ],
+   [
+    "SKILL",
+    "Reads live order, tracking, refund or catalogue data from the source systems → verified facts"
+   ],
+   [
+    "DECISION",
+    "Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8"
+   ],
+   [
+    "SKILL",
+    "Checks per-item eligibility against window and policy → verdict"
+   ],
+   [
+    "DECISION",
+    "Eligible? yes → step 7 / no → step 9"
+   ],
+   [
+    "SKILL",
+    "Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems"
+   ],
+   [
+    "AGENT",
+    "Replies with status, answer or product results → resolved conversation (deflected)"
+   ],
+   [
+    "HUMAN",
+    "Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution"
+   ],
+   [
+    "OUTCOME",
+    "Self-served conversation or escalated case with full context → deflection and zero broken journeys"
+   ]
+  ]
+ },
+ "dealer assist & navigation": {
+  "type": "conversational",
+  "steps": [
+   [
+    "TRIGGER",
+    "Dealer opens the support chat in the DMS → greeting and main menu"
+   ],
+   [
+    "USER",
+    "Taps one of 5 entry buttons → use case chosen"
+   ],
+   [
+    "WORKFLOW",
+    "Shows 1-2 sub-menus of error, reason or option buttons (max 3 taps) → scenario identified"
+   ],
+   [
+    "DECISION",
+    "Issue listed? yes → step 5 / no → step 5 with the Others path (open describe-your-issue mode)"
+   ],
+   [
+    "WORKFLOW",
+    "Talk-to-agent node passes context: use case, scenario, path, start turn, already-answered list → agent invoked"
+   ],
+   [
+    "GUARDRAIL",
+    "Dealer and branch IDs come from the DMS session and are never asked; no re-asking of menu answers → clean first turn"
+   ],
+   [
+    "AGENT",
+    "Sends the first scripted instruction or data request, then runs the procedure sheet from the set turn → resolution steps or collected details"
+   ],
+   [
+    "DECISION",
+    "Resolved by the instructions? yes → step 9 / no → agent continues the sheet or hands the details to support"
+   ],
+   [
+    "AGENT",
+    "Closes with outcome, reason and a 1-5 star rating → closing record"
+   ],
+   [
+    "OUTCOME",
+    "Dealer reaches the right procedure in at most 3 taps without repeated questions → faster self-service"
+   ]
+  ]
+ },
+ "production planning & plant / machine optimization": {
+  "type": "hybrid",
+  "steps": [
+   [
+    "TRIGGER",
+    "Planner asks in chat, or the monthly/weekly schedule fires → planning request"
+   ],
+   [
+    "SYSTEM",
+    "Exports from ERP, validated-batch-size system, quality-event system and validation planner load as-is into linked objects → reconciled data"
+   ],
+   [
+    "SKILL",
+    "Readiness skill checks master documents, MES recipe, open quality items, equipment requalification and materials per line → Ready / At risk / Blocked with blocker and owner"
+   ],
+   [
+    "SKILL",
+    "Batch-and-machine skill applies R1-R3 to demand and rounds to whole batches → batch sizes"
+   ],
+   [
+    "GUARDRAIL",
+    "Only equipment validated for the batch size and in date on requalification is used; others flagged with reason → compliant assignment"
+   ],
+   [
+    "SKILL",
+    "Groups batches sharing a blend to reduce non-serial changeovers → sequence and changeover saving"
+   ],
+   [
+    "DECISION",
+    "Any line blocked or equipment lapsed? yes → flag with source record for the owner / no → include in draft plan"
+   ],
+   [
+    "AGENT",
+    "Produces the machine-level draft plan with rationale per batch → plan pack"
+   ],
+   [
+    "HUMAN",
+    "Planner and quality SME review and approve; no write-back to source systems → approved plan"
+   ],
+   [
+    "OUTCOME",
+    "Draft in about one hour and plan ready earlier, with zero violations (targets) → planner capacity released"
+   ]
+  ]
+ },
+ "conversational analytics (sales & market data)": {
+  "type": "conversational",
+  "steps": [
+   [
+    "TRIGGER",
+    "Business user asks a question in natural language → request with persona"
+   ],
+   [
+    "GUARDRAIL",
+    "Persona access control and region/brand scope applied before any query → scoped request"
+   ],
+   [
+    "AGENT",
+    "Reads guidance, synonym map and field annotations; resolves metric and entities → query plan"
+   ],
+   [
+    "DECISION",
+    "Native text-to-SQL can see the custom fields? yes → step 5 / no → step 6"
+   ],
+   [
+    "SKILL",
+    "Generates and runs SQL over annotated objects → result set"
+   ],
+   [
+    "SKILL",
+    "Calls the domain query skill or cross-domain join skill → result set"
+   ],
+   [
+    "AGENT",
+    "Answers with table, period and scope using business labels, refusing schema enumeration and out-of-scope data → answer"
+   ],
+   [
+    "SYSTEM",
+    "Logs tokens, cost and response time per query → cost and latency record"
+   ],
+   [
+    "HUMAN",
+    "QA reviewers score the harness run against ground truths computed outside the platform → pass rate"
+   ],
+   [
+    "OUTCOME",
+    "Self-serve answers with consistency to certified reports and transparent cost (targets) → fewer analyst tickets"
+   ]
+  ]
+ },
+ "cloud managed-services support transformation": {
+  "type": "hybrid",
+  "steps": [
+   [
+    "TRIGGER",
+    "Ticket arrives by email, portal, team chat or legacy-ticket sync, or a correlated alert incident arrives by webhook → ticket or incident created"
+   ],
+   [
+    "WORKFLOW",
+    "Fires once on creation and calls the main agent → one AI action"
+   ],
+   [
+    "AGENT",
+    "Scans for P1/P2 emergency signals, classifies type, category, priority → structured output"
+   ],
+   [
+    "DECISION",
+    "P1/P2 or change request? yes → step 5 / no → step 6"
+   ],
+   [
+    "GUARDRAIL",
+    "No AI reply; route to on-call queue or approval board → human-only handling"
+   ],
+   [
+    "SKILL",
+    "Searches KB and runbooks; for alerts, graph lookup and on-demand cloud log and metric pulls → grounded context"
+   ],
+   [
+    "AGENT",
+    "Drafts the reply or customer notification and SOP checklist, or NO_RESPONSE → draft"
+   ],
+   [
+    "HUMAN",
+    "Reviews, personalises and approves send (100% on customer-impacting actions; supervised mode early on) → sent communication"
+   ],
+   [
+    "WORKFLOW",
+    "Awaiting-requester stage then auto-resolve and close after N days of silence; incident resolution closes linked tickets → closed records"
+   ],
+   [
+    "OUTCOME",
+    "Alert-to-customer notice and human touch-time under 5 minutes (target) → more customers per team"
+   ]
+  ]
+ }
+}
