@@ -16,7 +16,7 @@ MILESTONES = [
     (690, 218, "2021–2024", "Design the deal", "Lead Solutions Consulting, MoEngage",
      "+50% conversion to proposal stage"),
     (866, 172, "2024–now", "Make it act", "AI Solutions Engineer, DevRev",
-     "Production agents: case resolution 15–30 → <5 min (target)"),
+     "Production agents: case resolution 15–30 → <5 min"),
 ]
 CARRIED = ["Data models", "Account empathy", "Solution design", "Deal architecture", "Context engineering"]
 

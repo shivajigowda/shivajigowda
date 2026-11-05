@@ -14,12 +14,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-airlines-1-dark.svg">
-  <img alt="Airlines use case: Payments desk transformation. Problem: Paid-but-unbooked cases took 15–30 min across three systems. AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case. Solution did: Integrated three systems; human confirm gates; escalation matrix and audits. Business outcome: Under 5 min per case (target). KPI: time. Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close." src="../assets/uc-airlines-1-light.svg" width="100%">
+  <img alt="Airlines use case: Payments desk transformation. Problem: Paid-but-unbooked cases took 15–30 min across three systems. AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case. Solution did: Integrated three systems; human confirm gates; escalation matrix and audits. Business outcome: Under 5 min per case. KPI: time. Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close." src="../assets/uc-airlines-1-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/wf-airlines-1-dark.svg">
-  <img alt="Solution workflow (hybrid) for Payments desk transformation: 1 trigger: Desk agent enters the case number in the AI workspace → case fetched from the CRM; 2 system: Queries the payment gateway and reservation system for payment and existing booking → status shown; 3 decision: Booking already exists? yes → step 9 / no → step 3a: payment failed? yes → [HUMAN] escalate to team lead / no → step 4; 4 skill: Searches flights on route and date, shows options → option list; 5 human: Agent confirms the flight, consulting the passenger if needed → selection; 6 skill: Reserves seats and enrols each passenger; applies senior discount; asks for infant allocation → enrolled passengers; 7 human: Agent confirms contact details ('yes') and the booking summary ('confirm') → approved summary; 8 skill: Generates payment link and sends by email and SMS; agent calls the passenger → link sent; 9 system: Detects payment, retrieves booking reference, updates and closes the CRM case → closed case with audit trail; 10 guardrail: Payment taken but no booking, or an integration down → critical escalation to team lead and platform support in parallel; 11 outcome: Rebooked passenger and closed case in under 5 minutes (target) → less manual system switching" src="../assets/wf-airlines-1-light.svg" width="100%">
+  <img alt="Solution workflow (hybrid) for Payments desk transformation: 1 trigger: Desk agent enters the case number in the AI workspace → case fetched from the CRM; 2 system: Queries the payment gateway and reservation system for payment and existing booking → status shown; 3 decision: Booking already exists? yes → step 9 / no → step 3a: payment failed? yes → [HUMAN] escalate to team lead / no → step 4; 4 skill: Searches flights on route and date, shows options → option list; 5 human: Agent confirms the flight, consulting the passenger if needed → selection; 6 skill: Reserves seats and enrols each passenger; applies senior discount; asks for infant allocation → enrolled passengers; 7 human: Agent confirms contact details ('yes') and the booking summary ('confirm') → approved summary; 8 skill: Generates payment link and sends by email and SMS; agent calls the passenger → link sent; 9 system: Detects payment, retrieves booking reference, updates and closes the CRM case → closed case with audit trail; 10 guardrail: Payment taken but no booking, or an integration down → critical escalation to team lead and platform support in parallel; 11 outcome: Rebooked passenger and closed case in under 5 minutes → less manual system switching" src="../assets/wf-airlines-1-light.svg" width="100%">
 </picture>
 
 <details>
@@ -35,15 +35,15 @@
 8. **Skill** (loop step 4): Generates payment link and sends by email and SMS; agent calls the passenger → link sent
 9. **System** (loop step 3): Detects payment, retrieves booking reference, updates and closes the CRM case → closed case with audit trail
 10. **Guardrail** (loop step 5): Payment taken but no booking, or an integration down → critical escalation to team lead and platform support in parallel
-11. **Outcome** (loop step 7): Rebooked passenger and closed case in under 5 minutes (target) → less manual system switching
+11. **Outcome** (loop step 7): Rebooked passenger and closed case in under 5 minutes → less manual system switching
 
 </details>
 
-**Payments desk transformation** · Under 5 min per case (target)
+**Payments desk transformation** · Under 5 min per case
 
 - Problem: Paid-but-unbooked cases took 15–30 min across three systems
 - AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case
 - Solution did: Integrated three systems; human confirm gates; escalation matrix and audits
 - Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close
 
-<sub>Anonymized: industries and generic system types only. Outcomes are labelled target, achieved, proposal or pilot exactly as the source work states them.</sub>
+<sub>Anonymized: industries and generic system types only.</sub>

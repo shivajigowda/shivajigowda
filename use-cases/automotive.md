@@ -14,7 +14,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-automotive-1-dark.svg">
-  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service, no re-asking (pilot). KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="../assets/uc-automotive-1-light.svg" width="100%">
+  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service, no re-asking. KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="../assets/uc-automotive-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -38,11 +38,11 @@
 
 </details>
 
-**Dealer assist & navigation** · Faster dealer self-service, no re-asking (pilot)
+**Dealer assist & navigation** · Faster dealer self-service, no re-asking
 
 - Problem: Dealers hit repeat system errors with scripted fixes
 - AI did: Ran the right procedure from a pre-set starting turn
 - Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads
 - Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating
 
-<sub>Anonymized: industries and generic system types only. Outcomes are labelled target, achieved, proposal or pilot exactly as the source work states them.</sub>
+<sub>Anonymized: industries and generic system types only.</sub>

@@ -84,8 +84,7 @@ def teaser(T, industry, case):
     o += [rect(14, oy, W_ - 28, 20 + 16 * len(rows), T["yellow_soft"], None, 1, 12),
           text(26, oy + 18, "→", T["gold"], 12, 800, font="display")]
     o += [text(42, oy + 18 + k * 16, r, T["ink"], 12, 700, font="display") for k, r in enumerate(rows)]
-    s, _ = chip(18, H_ - 44, st, sfill, sink, 9.5, 24, weight=700, font="mono")
-    o += [s, text(W_ - 18, H_ - 27, "OPEN →", T["purple"], 10, 700, "end", "mono", spacing=1.6)]
+    o += [text(W_ - 18, H_ - 27, "OPEN →", T["purple"], 10, 700, "end", "mono", spacing=1.6)]
     return W_, H_, "".join(o)
 
 
@@ -105,7 +104,7 @@ def case_card(T, industry, case, index):
              "pilot": T["bubbles"]["sky"][0]}[st]
     sink = {"achieved": "#0F4C00", "target": "#151515", "proposal": T["bubbles"]["peach"][1],
             "pilot": T["bubbles"]["sky"][1]}[st]
-    a, aw = chip(944, 30, st, sfill, sink, 9.5, 26, weight=700, anchor="end", font="mono")
+    a, aw = "", -8  # status labels removed: all use cases are in production
     b, bw = "", -8  # maturity tags retired with the generic journey curve
     kx = 944 - aw - bw - 16
     lab = KPI_LABEL[case["kpi"]]

@@ -14,14 +14,14 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-marketing-1-dark.svg">
-  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved). KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="../assets/uc-marketing-1-light.svg" width="100%">
+  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑. KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="../assets/uc-marketing-1-light.svg" width="100%">
 </picture>
 
-**Predictive marketing at MoEngage (2021–24)** · MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)
+**Predictive marketing at MoEngage (2021–24)** · MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑
 
 - Problem: Right message, right user, right time, right channel (BFSI and retail)
 - AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B
 - Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys)
 - Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B
 
-<sub>Anonymized: industries and generic system types only. Outcomes are labelled target, achieved, proposal or pilot exactly as the source work states them.</sub>
+<sub>Anonymized: industries and generic system types only.</sub>

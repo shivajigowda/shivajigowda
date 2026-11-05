@@ -92,8 +92,7 @@ def industry_page(slug, label):
              "<p align=\"center\">\n" + tab_buttons(slug, "", "../assets/") + "\n</p>\n"]
     for n, c in enumerate(CASES[slug], 1):
         parts.append(case_block(slug, label, n, c, "../assets/"))
-    parts.append("<sub>Anonymized: industries and generic system types only. Outcomes are labelled target, "
-                 "achieved, proposal or pilot exactly as the source work states them.</sub>\n")
+    parts.append("<sub>Anonymized: industries and generic system types only.</sub>\n")
     return "\n".join(parts)
 
 

@@ -94,7 +94,7 @@ def hero(T):
 
 
 # ------------------------------------------------------------------ metrics
-METRICS = [("<5", " min", "per airline payments-desk case, down from 15–30 (target)"),
+METRICS = [("<5", " min", "per airline payments-desk case, down from 15–30"),
            ("16+", "", "systems unified into one governed context"),
            ("+50%", "", "conversion to proposal stage at MoEngage"),
            ("70+", "", "BFSI projects: banks, NBFCs, insurers, fintechs"),

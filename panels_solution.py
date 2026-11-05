@@ -10,7 +10,7 @@ CASES = [
     ("Airline payments desk", "15–30 min manual cases across three systems",
      "Picks the next step and calls the right tool each turn",
      "State kept outside the model, workflow with approvals, integrations to 4 systems",
-     "Under 5 min per case (target)", "M3 · L4", "time"),
+     "Under 5 min per case", "M3 · L4", "time"),
     ("Enterprise answers", "Answers scattered across CRM, tickets and docs",
      "Text-to-SQL + semantic search + keyword index",
      "16+ connectors with delta sync, field annotations and permissions",

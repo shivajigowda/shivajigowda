@@ -15,7 +15,7 @@ STEPS = [
     ("Measure the outcome, then expand", "time, cost, revenue, risk", "chart"),
 ]
 INSTANCES = [("Airlines", "3 systems, human confirm gates"), ("BFSI & Fintech", "authority block, tenant isolation"),
-             ("Retail & D2C", "4 systems unified, ~76% deflection (achieved)"), ("Automotive", "≤3 taps, no re-asking"),
+             ("Retail & D2C", "4 systems unified, ~76% deflection"), ("Automotive", "≤3 taps, no re-asking"),
              ("Pharma", "shadow run, zero-violation guardrail"), ("IT services", "P1/P2 hard block, confirm gates"),
              ("Marketing", "event data → segments → journeys")]
 

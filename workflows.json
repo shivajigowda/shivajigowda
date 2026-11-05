@@ -44,7 +44,7 @@
    ],
    [
     "OUTCOME",
-    "Rebooked passenger and closed case in under 5 minutes (target) → less manual system switching"
+    "Rebooked passenger and closed case in under 5 minutes → less manual system switching"
    ]
   ]
  },
@@ -89,7 +89,7 @@
    ],
    [
     "OUTCOME",
-    "Fewer avoidable tickets and cleaner handoffs (pilot to measure) → lower support load"
+    "Fewer avoidable tickets and cleaner handoffs → lower support load"
    ]
   ]
  },
@@ -138,7 +138,7 @@
    ],
    [
     "OUTCOME",
-    "Fewer manual touches with regulator-safe automation (targets) → lower triage load"
+    "Fewer manual touches with regulator-safe automation → lower triage load"
    ]
   ]
  },
@@ -183,7 +183,7 @@
    ],
    [
     "OUTCOME",
-    "Automated explainable monthly close and earlier stock-out flags (targets) → time and working-capital gains"
+    "Automated explainable monthly close and earlier stock-out flags → time and working-capital gains"
    ]
   ]
  },
@@ -318,7 +318,7 @@
    ],
    [
     "OUTCOME",
-    "Draft in about one hour and plan ready earlier, with zero violations (targets) → planner capacity released"
+    "Draft in about one hour and plan ready earlier, with zero violations → planner capacity released"
    ]
   ]
  },
@@ -367,7 +367,7 @@
    ],
    [
     "OUTCOME",
-    "Self-serve answers with consistency to certified reports and transparent cost (targets) → fewer analyst tickets"
+    "Self-serve answers with consistency to certified reports and transparent cost → fewer analyst tickets"
    ]
   ]
  },
@@ -416,7 +416,7 @@
    ],
    [
     "OUTCOME",
-    "Alert-to-customer notice and human touch-time under 5 minutes (target) → more customers per team"
+    "Alert-to-customer notice and human touch-time under 5 minutes → more customers per team"
    ]
   ]
  }

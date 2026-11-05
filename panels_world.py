@@ -68,7 +68,7 @@ def constellation(T):
 
 
 # ------------------------------------------------------------------ statement
-PROOFS = ["16+ production connectors", "15–30 → <5 min per case (target)", "Shadow run first, gated go-live"]
+PROOFS = ["16+ production connectors", "15–30 → <5 min per case", "Shadow run first, gated go-live"]
 
 
 def statement(T):

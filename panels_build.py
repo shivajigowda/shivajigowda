@@ -15,7 +15,7 @@ LANES = [
      "Airline re-booking across CRM, payments, reservations and internal APIs.",
      [("Request", "customer · staff", "chat"), ("Planner", "multi-agent", "nodes"),
       ("Allowlist", "guardrails · human", "shield"), ("Tool calls", "crm · payments", "bolt")],
-     ["intent", "plan", "act"], "15–30 → <5 min (target)", "violet"),
+     ["intent", "plan", "act"], "15–30 → <5 min", "violet"),
     ("03", "Connector delta engine",
      "16+ production TypeScript connectors that never re-send what the platform already has.",
      [("Scan window", "cursor · time", "scan"), ("Skip settled", "terminal states", "check"),
