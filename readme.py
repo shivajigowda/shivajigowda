@@ -122,7 +122,7 @@ def readme(panels):
         + f"\n[Open the {label} page](use-cases/{slug}.md)\n\n</details>\n" for slug, label in TABS)
     HEADLINE = ["AI Solutions Engineer", "Context layer first, agents on top",
                 "Agentic AI across complex enterprise systems", "Guardrails, evals and human gates built in",
-                "13+ yrs overall · 5+ yrs enterprise AI", "APJ SE of the Year"]
+                "13+ yrs in SaaS · 5+ yrs enterprise AI", "APJ SE of the Year"]
     badges = (f"[![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin"
               f"&logoColor=white&labelColor=151515)]({LINKEDIN}) "
               f"[![Email](https://img.shields.io/badge/Email-{quote(EMAIL.replace('-', '--'))}-FDF049?style=for-the-badge"

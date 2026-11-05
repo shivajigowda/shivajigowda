@@ -20,7 +20,7 @@ def _hero_left(T):
     P = T["purple"]
     o.append(rich(54, 168, [[("I turn enterprise", None)], [("context", P), (" into AI", None)],
                             [("that ", None), ("acts.", P)]], T["ink"], 54, 60))
-    s, _ = para(56, 338, "13+ years overall, 5+ in enterprise AI. From CXO discovery to production agents: "
+    s, _ = para(56, 338, "13+ years in SaaS, 5+ in enterprise AI. From CXO discovery to production agents: "
                 "the context layer first, guarded multi-agent workflows on top.",
                 T["ink2"], 16.5, 470, 25)
     o.append(s)
