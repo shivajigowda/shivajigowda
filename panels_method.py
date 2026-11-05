@@ -62,7 +62,7 @@ def method(T):
 GROUPS = [("Agents & AI", "lilac", ["Multi-agent orchestration", "LLM agent design", "Voice agents",
                                     "Evals & guardrails", "Claude Code"]),
           ("Context & integration", "lime", ["MCP", "REST", "Webhooks", "Connectors / ETL", "Knowledge graphs",
-                                             "DevRev AirSync"]),
+                                             "Incremental sync"]),
           ("Languages", "yellow", ["Python", "SQL", "TypeScript", "JavaScript", "HTML / CSS"]),
           ("Solution craft", "peach", ["CXO discovery", "Solution architecture", "RFP responses", "Pricing & ROI models",
                                        "POC → production"])]

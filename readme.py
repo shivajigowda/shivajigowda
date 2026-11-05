@@ -19,6 +19,23 @@ def pic(base, alt, prefix="assets/"):
             f'  <img alt="{alt}" src="{prefix}{base}-light.svg" width="100%">\n</picture>\n')
 
 
+def tab_buttons(active, link_prefix, asset_prefix):
+    """Row of clickable tab images; each links to its industry page."""
+    out = []
+    for slug, label in TABS:
+        state = "on" if slug == active else "off"
+        base = f"{asset_prefix}tab-{slug}-{state}"
+        out.append(f'<a href="{link_prefix}{slug}.md"><picture><source media="(prefers-color-scheme: dark)" '
+                   f'srcset="{base}-dark.svg"><img alt="{label}" src="{base}-light.svg" height="40"></picture></a>')
+    return "\n".join(out)
+
+
+def acc_summary(slug, label, asset_prefix="assets/"):
+    base = f"{asset_prefix}acc-{slug}"
+    return (f'<summary><picture><source media="(prefers-color-scheme: dark)" srcset="{base}-dark.svg">'
+            f'<img alt="{label}: click to open" src="{base}-light.svg" width="100%"></picture></summary>')
+
+
 def tab_links(active, prefix):
     out = []
     for slug, label in TABS:
@@ -31,7 +48,7 @@ def tab_links(active, prefix):
 
 def case_alt(industry, c):
     return (f"{industry} use case: {c['use']}. Problem: {c['problem']}. AI did: {c['ai']}. Solution did: "
-            f"{c['solution']}. Business outcome: {c['outcome']}. Maturity {c['tag']}; KPI: {c['kpi']}. "
+            f"{c['solution']}. Business outcome: {c['outcome']}. KPI: {c['kpi']}. "
             f"Architecture: {' → '.join(c['arch'])}.").replace('"', "'")
 
 
@@ -53,14 +70,14 @@ def case_block(slug, label, n, c, prefix, with_text=True):
         out.append(pic(f"wf-{base}", wf_alt(c, wf), prefix))
         out.append(f"<details>\n<summary>Workflow steps as text: {c['use']}</summary>\n\n{wf_text(wf)}\n\n</details>\n")
     if with_text:
-        out.append(f"**{c['use']}** · {c['tag']} · {c['outcome']}\n\n- Problem: {c['problem']}\n- AI did: {c['ai']}\n"
+        out.append(f"**{c['use']}** · {c['outcome']}\n\n- Problem: {c['problem']}\n- AI did: {c['ai']}\n"
                    f"- Solution did: {c['solution']}\n- Architecture: {' → '.join(c['arch'])}\n")
     return "\n".join(out)
 
 
 def industry_page(slug, label):
     parts = [f"# {label}: AI use cases I've solutioned\n", "[← back to profile](../README.md)\n",
-             pic(f"tabs-{slug}", f"Industry tabs, {label} selected", "../assets/"), tab_links(slug, "") + "\n"]
+             "<p align=\"center\">\n" + tab_buttons(slug, "", "../assets/") + "\n</p>\n"]
     for n, c in enumerate(CASES[slug], 1):
         parts.append(case_block(slug, label, n, c, "../assets/"))
     parts.append("<sub>Anonymized: industries and generic system types only. Outcomes are labelled target, "
@@ -77,7 +94,7 @@ def evolution_text():
     for years, role, company, (wave, _), level, nodes, outcome, rows, learned in ERAS:
         chips = "; ".join(f"{lab}: {', '.join(c)}" for lab, c in rows)
         out.append(f"- **{years} · {role}, {company}** ({wave}, {level}). Pipeline: "
-                   f"{' → '.join(t for t, _ in nodes)} → {outcome}. {chips}. Learned: {learned}")
+                   f"{' → '.join(t for t, _ in nodes)} → outcomes: {', '.join(f'{lab} {a}' for a, lab in outcome)}. {chips}. Learned: {learned}")
     return "\n".join(out) + (
         "\n\nExplainers I used with customers (general techniques, not vendor claims): propensity models are "
         "typically gradient-boosted trees; behavioral clustering, e.g. k-means; a multi-armed bandit shifts traffic "
@@ -89,8 +106,7 @@ def readme(panels):
     alt = {name: desc for name, _, _, desc in panels}
     a_slug, a_label = TABS[0]
     others = "\n".join(
-        f"<details>\n<summary><b>{label}</b>: {len(CASES[slug])} use case{'s' if len(CASES[slug]) > 1 else ''}"
-        f"</summary>\n\n"
+        f"<details>\n{acc_summary(slug, label)}\n\n"
         + "\n".join(case_block(slug, label, n, c, "assets/") for n, c in enumerate(CASES[slug], 1))
         + f"\n[Open the {label} page](use-cases/{slug}.md)\n\n</details>\n" for slug, label in TABS[1:])
     HEADLINE = ["AI Solutions Engineer · Forward-deployed", "Applied AI, CXO discovery → production",
@@ -117,6 +133,8 @@ def readme(panels):
 
 </details>
 
+{pic('awards', alt['awards'])}
+
 {pic('approach', alt['approach'])}
 <details>
 <summary><b>Text version: my approach</b></summary>
@@ -127,8 +145,9 @@ def readme(panels):
 
 ## AI use cases I've solutioned
 
-{pic(f'tabs-{a_slug}', f'Industry tabs, {a_label} selected')}
-{tab_links(a_slug, 'use-cases/')}
+<p align="center">
+{tab_buttons(a_slug, 'use-cases/', 'assets/')}
+</p>
 
 {case_block(a_slug, a_label, 1, CASES[a_slug][0], 'assets/')}
 {others}

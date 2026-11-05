@@ -40,7 +40,7 @@ CONCEPTS = [
      "syncs survive rate limits without manual reruns"),
     ("state", "Checkpoint after verified writes",
      "Save state only after the upload is verified; offload state past 8 MB to an artifact.",
-     "AirSync state + artifacts", "lime", "checkpoint",
+     "Sync state + artifacts", "lime", "checkpoint",
      "no lost or duplicated data after a crash"),
 ]
 

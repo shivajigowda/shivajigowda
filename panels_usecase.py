@@ -13,6 +13,29 @@ KPI_LABEL = {"time": "time saved", "cost": "cost down", "risk": "risk down", "re
 
 
 # ------------------------------------------------------------------ tab bar
+def tabbtn(T, label, on):
+    """One clickable tab button (each is its own image so it can sit inside a link)."""
+    h, size = 40, 14
+    w = round(tw(label, size, 700) + 40)
+    fill, ink, stroke = (T["purple_fill"], "#FFFFFF", T["purple_fill"]) if on else (T["card"], T["ink2"], T["card_line"])
+    body = rect(1, 1, w - 2, h - 2, fill, stroke, 1.2, (h - 2) / 2) + text(w / 2, h / 2 + 5, label, ink, size,
+                                                                            700, "middle", "display")
+    return w, h, body
+
+
+def accbtn(T, label, count):
+    """Accordion summary drawn as a full-width button: industry, count, and a 'click to open' cue."""
+    W_, h = 880, 56
+    body = [rect(1, 1, W_ - 2, h - 2, T["card"], T["card_line"], 1.2, 16),
+            rect(14, 14, 28, 28, T["lav_soft"], None, 1, 8),
+            text(28, 33, "+", T["purple"], 18, 800, "middle", "display"),
+            text(56, 34, label, T["ink"], 16, 800, font="display", spacing=-0.2)]
+    sub = f"{count} use case{'s' if count > 1 else ''}"
+    body.append(text(56 + tw(label, 16, 800) + 14, 34, sub, T["muted"], 13, 500))
+    body.append(text(W_ - 24, 34, "CLICK TO OPEN", T["purple"], 10, 700, "end", "mono", spacing=1.6))
+    return W_, h, "".join(body)
+
+
 def tabbar(T, active):
     H, gap, h = 72, 8, 38
     widths = [tw(lab, 13.5, 700) + 34 for _, lab in TABS]
@@ -59,8 +82,7 @@ def case_card(T, industry, case, index):
     sink = {"achieved": "#0F4C00", "target": "#151515", "proposal": T["bubbles"]["peach"][1],
             "pilot": T["bubbles"]["sky"][1]}[st]
     a, aw = chip(944, 30, st, sfill, sink, 9.5, 26, weight=700, anchor="end", font="mono")
-    b, bw = chip(944 - aw - 8, 30, case["tag"], T["ink"] if T["name"] == "light" else "#2E2A42", "#FFFFFF", 9.5, 26,
-                 weight=700, anchor="end", font="mono")
+    b, bw = "", -8  # maturity tags retired with the generic journey curve
     kx = 944 - aw - bw - 16
     lab = KPI_LABEL[case["kpi"]]
     lw = tw(lab, 12, 600)

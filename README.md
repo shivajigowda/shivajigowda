@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="From connectors that sync to agents that act. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: resolve case, re-book, notify." src="assets/hero-light.svg" width="100%">
+  <img alt="From connectors that sync to agents that act. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg" width="100%">
 </picture>
 
 
@@ -15,7 +15,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/maturity-dark.svg">
-  <img alt="Two dotted maturity curves. For businesses: M1 unify and see, M2 agentic bridges, M3 end-to-end chains, M4 governed enterprise. For people: L1 AI answers, L2 assists, L3 acts, L4 orchestrates, L5 governs. Markers: pharma analytics and marketing at M1-M2; BFSI (2), pharma planning and automotive at M2; airlines and retail and D2C (2) at M3; IT services at M3-M4. Marketing, pharma (2) and automotive at L2; airlines, BFSI (2) and retail and D2C (2) at L3; IT services at L4." src="assets/maturity-light.svg" width="100%">
+  <img alt="AI-centric employees create AI-centric companies. Two dotted curves. The AI employee journey: AI blind, AI curious, daily AI, expanding AI, AI first, AI evangelist. The AI company journey, running behind it: AI desert, AI tools, AI initiatives, AI champions, AI platform, AI-centric business." src="assets/maturity-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -26,12 +26,18 @@
 <details>
 <summary><b>Text version: how I evolved</b></summary>
 
-- **2024–now · AI Solutions Engineer, DevRev → architect** (Generative & agentic AI, reached L4 · M3–M4). Pipeline: 16+ connectors → Governed context → Multi-agent → Evals + guardrails → Airline payments desk 15–30 → <5 min per case (target). concepts: Context layer, Multi-agent orchestration, Evals, Guardrails, Act-as identity, Retrieval, not stuffing. Learned: The model is a component; the solution is the product.
-- **2021–2024 · Presales Manager → Lead Solutions Consulting, MoEngage · promoted Feb 2023** (Predictive ML, reached L2 · M1–M2). Pipeline: SDKs + Data API → Warehouse imports → RFM segments → Sherpa models → +50% conversion to proposal stage. data in: Android/iOS/Web SDKs, Data API (server events), S3/SFTP imports, Warehouse (BigQuery/Snowflake/Redshift), CDP sources; sherpa (now merlin ai): Best Time to Send, Most Preferred Channel, Predictions (churn & conversion), Dynamic A/B (bandit-style), RFM segments (1–3 per axis), Flows (journeys). Learned: AI is only as good as the event data feeding it.
+- **2024–now · AI Solutions Engineer, DevRev → architect** (Generative & agentic AI, journey: ai evangelist). Pipeline: 16+ connectors → Governed context → Multi-agent → Evals + guardrails → outcomes: Hours saved ↑, Cost to serve ↓, Revenue ↑, CSAT ↑. concepts: Context layer, Multi-agent orchestration, Evals, Guardrails, Act-as identity, Retrieval, not stuffing. Learned: The model is a component; the solution is the product.
+- **2021–2024 · Presales Manager → Lead Solutions Consulting, MoEngage · promoted Feb 2023** (Predictive ML, journey: expanding ai). Pipeline: SDKs + Data API → Warehouse sync → RFM segments → Sherpa models → outcomes: MAU ↑, CTR ↑, CVR ↑, Retention ↑. data in: Android/iOS/Web SDKs, Data API (server events), S3/SFTP imports, Warehouse (BigQuery/Snowflake/Redshift), CDP sources; sherpa (now merlin ai): Best Time to Send, Most Preferred Channel, Predictions (churn & conversion), Dynamic A/B (bandit-style), RFM segments (1–3 per axis), Flows (journeys). Learned: AI is only as good as the event data feeding it.
 
 Explainers I used with customers (general techniques, not vendor claims): propensity models are typically gradient-boosted trees; behavioral clustering, e.g. k-means; a multi-armed bandit shifts traffic to the winning variant while still exploring; RFM scores recency, frequency and monetary value; aggregations turn event streams into features (counts, recency, rolling windows).
 
 </details>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/awards-dark.svg">
+  <img alt="Awards, latest first: APJ SE of the Year, DevRev, Sales Kickoff 2026; Deal Maker, MoEngage, Annual Sales Kickoff 2024; Rainmaker, MoEngage, Q2 2022." src="assets/awards-light.svg" width="100%">
+</picture>
+
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/approach-dark.svg">
@@ -53,16 +59,19 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 ## AI use cases I've solutioned
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/tabs-airlines-dark.svg">
-  <img alt="Industry tabs, Airlines selected" src="assets/tabs-airlines-light.svg" width="100%">
-</picture>
-
-<a href="use-cases/airlines.md"><img alt="Airlines" src="https://img.shields.io/badge/Airlines-6E22FE?style=flat-square"></a> <a href="use-cases/bfsi-fintech.md"><img alt="BFSI & Fintech" src="https://img.shields.io/badge/BFSI%20%26%20Fintech-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="use-cases/retail-d2c.md"><img alt="Retail & D2C" src="https://img.shields.io/badge/Retail%20%26%20D2C-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="use-cases/automotive.md"><img alt="Automotive" src="https://img.shields.io/badge/Automotive-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="use-cases/pharma.md"><img alt="Pharma" src="https://img.shields.io/badge/Pharma-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="use-cases/it-services.md"><img alt="IT services" src="https://img.shields.io/badge/IT%20services-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="use-cases/marketing.md"><img alt="Marketing" src="https://img.shields.io/badge/Marketing-F2ECFE?style=flat-square&labelColor=F2ECFE"></a>
+<p align="center">
+<a href="use-cases/airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-airlines-on-dark.svg"><img alt="Airlines" src="assets/tab-airlines-on-light.svg" height="40"></picture></a>
+<a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-bfsi-fintech-off-dark.svg"><img alt="BFSI & Fintech" src="assets/tab-bfsi-fintech-off-light.svg" height="40"></picture></a>
+<a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-retail-d2c-off-dark.svg"><img alt="Retail & D2C" src="assets/tab-retail-d2c-off-light.svg" height="40"></picture></a>
+<a href="use-cases/automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-automotive-off-dark.svg"><img alt="Automotive" src="assets/tab-automotive-off-light.svg" height="40"></picture></a>
+<a href="use-cases/pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-pharma-off-dark.svg"><img alt="Pharma" src="assets/tab-pharma-off-light.svg" height="40"></picture></a>
+<a href="use-cases/it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-it-services-off-dark.svg"><img alt="IT services" src="assets/tab-it-services-off-light.svg" height="40"></picture></a>
+<a href="use-cases/marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-marketing-off-dark.svg"><img alt="Marketing" src="assets/tab-marketing-off-light.svg" height="40"></picture></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-airlines-1-dark.svg">
-  <img alt="Airlines use case: Payments desk transformation. Problem: Paid-but-unbooked cases took 15–30 min across three systems. AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case. Solution did: Integrated three systems; human confirm gates; escalation matrix and audits. Business outcome: Under 5 min per case (target). Maturity M3 · L3; KPI: time. Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close." src="assets/uc-airlines-1-light.svg" width="100%">
+  <img alt="Airlines use case: Payments desk transformation. Problem: Paid-but-unbooked cases took 15–30 min across three systems. AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case. Solution did: Integrated three systems; human confirm gates; escalation matrix and audits. Business outcome: Under 5 min per case (target). KPI: time. Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close." src="assets/uc-airlines-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -87,7 +96,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Payments desk transformation** · M3 · L3 · Under 5 min per case (target)
+**Payments desk transformation** · Under 5 min per case (target)
 
 - Problem: Paid-but-unbooked cases took 15–30 min across three systems
 - AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case
@@ -95,11 +104,11 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 - Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close
 
 <details>
-<summary><b>BFSI & Fintech</b>: 2 use cases</summary>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-bfsi-fintech-dark.svg"><img alt="BFSI & Fintech: click to open" src="assets/acc-bfsi-fintech-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-bfsi-fintech-1-dark.svg">
-  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot to measure; no target). Maturity M2 · L3; KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="assets/uc-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot to measure; no target). KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="assets/uc-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -123,7 +132,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Order-to-cash SaaS support PoC** · M2 · L3 · Fewer avoidable tickets (pilot to measure; no target)
+**Order-to-cash SaaS support PoC** · Fewer avoidable tickets (pilot to measure; no target)
 
 - Problem: Rising in-app tickets for questions articles or data could resolve
 - AI did: Answered how-tos, diagnosed tenant issues, categorized tickets
@@ -132,7 +141,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-bfsi-fintech-2-dark.svg">
-  <img alt="BFSI & Fintech use case: NBFC customer support transformation. Problem: Every lender support email triaged by hand, regulators included. AI did: Spotted authority senders, classified, wrote multilingual KB replies. Solution did: Dual-inbox rules, authority block, one-action cost cap, supervised go-live. Business outcome: Fewer manual touches, safe automation (targets). Maturity M2 · L3; KPI: risk. Architecture: Service + complaints inboxes → Ticket-created trigger → Agent: authority scan, classify, mask PII → Category + reply → Human groups for complaints." src="assets/uc-bfsi-fintech-2-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: NBFC customer support transformation. Problem: Every lender support email triaged by hand, regulators included. AI did: Spotted authority senders, classified, wrote multilingual KB replies. Solution did: Dual-inbox rules, authority block, one-action cost cap, supervised go-live. Business outcome: Fewer manual touches, safe automation (targets). KPI: risk. Architecture: Service + complaints inboxes → Ticket-created trigger → Agent: authority scan, classify, mask PII → Category + reply → Human groups for complaints." src="assets/uc-bfsi-fintech-2-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -157,7 +166,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**NBFC customer support transformation** · M2 · L3 · Fewer manual touches, safe automation (targets)
+**NBFC customer support transformation** · Fewer manual touches, safe automation (targets)
 
 - Problem: Every lender support email triaged by hand, regulators included
 - AI did: Spotted authority senders, classified, wrote multilingual KB replies
@@ -169,20 +178,20 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 </details>
 
 <details>
-<summary><b>Retail & D2C</b>: 2 use cases</summary>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-retail-d2c-dark.svg"><img alt="Retail & D2C: click to open" src="assets/acc-retail-d2c-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-retail-d2c-1-dark.svg">
-  <img alt="Retail & D2C use case: Apparel retail AI transformation (proposal). Problem: Two weeks a month of Excel to derive COGS and P&L. AI did: Explained variances, drafted outputs, flagged availability exceptions (proposed). Solution did: Unified sources, quality gates, versioned finance rules, lineage, shadow runs. Business outcome: Automated explainable close; availability above 98% (targets). Maturity M1–M3 · L3; KPI: time. Architecture: ERP · DMS · POS · e-commerce → Sync connectors + quality gates → Knowledge graph → Area agents + workflow engine → App · chat · export." src="assets/uc-retail-d2c-1-light.svg" width="100%">
+  <img alt="Retail & D2C use case: Apparel retail AI transformation. Problem: Two weeks a month of Excel to derive COGS and P&L. AI did: Explained variances, drafted outputs, flagged availability exceptions (proposed). Solution did: Unified sources, quality gates, versioned finance rules, lineage, shadow runs. Business outcome: Automated explainable close; availability above 98% (targets). KPI: time. Architecture: ERP · DMS · POS · e-commerce → Sync connectors + quality gates → Knowledge graph → Area agents + workflow engine → App · chat · export." src="assets/uc-retail-d2c-1-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/wf-retail-d2c-1-dark.svg">
-  <img alt="Solution workflow (scheduled/batch) for Apparel retail AI transformation (proposal): 1 trigger: Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls; 2 system: Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data; 3 guardrail: Quality gate checks freshness, duplicates, missing keys and control totals → pass or block insights; 4 decision: Gate passed? yes → step 5 / no → insights blocked and data owner alerted; 5 system: Maps to the common grain (SKU, pack size, channel, month) in the knowledge graph with lineage and permissions → trusted base; 6 agent: Finance and planning agents run versioned rules for price bridge, COGS, forecast and plan vs actual; model explains, drafts → draft outputs; 7 human: Finance and planners approve key outputs at each gate → approved figures; 8 skill: Availability control tower raises debounced alerts with causes and next actions → exceptions; 9 system: Delivers via app, email, team chat, spreadsheet or PDF with data-as-of time; audit log and value ledger → governed delivery; 10 outcome: Automated explainable monthly close and earlier stock-out flags (targets) → time and working-capital gains" src="assets/wf-retail-d2c-1-light.svg" width="100%">
+  <img alt="Solution workflow (scheduled/batch) for Apparel retail AI transformation: 1 trigger: Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls; 2 system: Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data; 3 guardrail: Quality gate checks freshness, duplicates, missing keys and control totals → pass or block insights; 4 decision: Gate passed? yes → step 5 / no → insights blocked and data owner alerted; 5 system: Maps to the common grain (SKU, pack size, channel, month) in the knowledge graph with lineage and permissions → trusted base; 6 agent: Finance and planning agents run versioned rules for price bridge, COGS, forecast and plan vs actual; model explains, drafts → draft outputs; 7 human: Finance and planners approve key outputs at each gate → approved figures; 8 skill: Availability control tower raises debounced alerts with causes and next actions → exceptions; 9 system: Delivers via app, email, team chat, spreadsheet or PDF with data-as-of time; audit log and value ledger → governed delivery; 10 outcome: Automated explainable monthly close and earlier stock-out flags (targets) → time and working-capital gains" src="assets/wf-retail-d2c-1-light.svg" width="100%">
 </picture>
 
 <details>
-<summary>Workflow steps as text: Apparel retail AI transformation (proposal)</summary>
+<summary>Workflow steps as text: Apparel retail AI transformation</summary>
 
 1. **Trigger** (loop step 2): Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls
 2. **System** (loop step 3): Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data
@@ -197,7 +206,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Apparel retail AI transformation (proposal)** · M1–M3 · L3 · Automated explainable close; availability above 98% (targets)
+**Apparel retail AI transformation** · Automated explainable close; availability above 98% (targets)
 
 - Problem: Two weeks a month of Excel to derive COGS and P&L
 - AI did: Explained variances, drafted outputs, flagged availability exceptions (proposed)
@@ -206,7 +215,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-retail-d2c-2-dark.svg">
-  <img alt="Retail & D2C use case: Customer-experience agent (live). Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge (achieved). Maturity M3 · L3; KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="assets/uc-retail-d2c-2-light.svg" width="100%">
+  <img alt="Retail & D2C use case: Customer-experience agent (live). Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge (achieved). KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="assets/uc-retail-d2c-2-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -230,7 +239,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Customer-experience agent (live)** · M3 · L3 · ~76% deflection through ~14x surge (achieved)
+**Customer-experience agent (live)** · ~76% deflection through ~14x surge (achieved)
 
 - Problem: Brittle 95-node bot could not absorb launch-surge support
 - AI did: Chose skills; answered orders, returns, refunds in natural language
@@ -242,11 +251,11 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 </details>
 
 <details>
-<summary><b>Automotive</b>: 1 use case</summary>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-automotive-dark.svg"><img alt="Automotive: click to open" src="assets/acc-automotive-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-automotive-1-dark.svg">
-  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service (no KPI stated). Maturity M2 · L2 (inferred); KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="assets/uc-automotive-1-light.svg" width="100%">
+  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service (no KPI stated). KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="assets/uc-automotive-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -270,7 +279,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Dealer assist & navigation** · M2 · L2 (inferred) · Faster dealer self-service (no KPI stated)
+**Dealer assist & navigation** · Faster dealer self-service (no KPI stated)
 
 - Problem: Dealers hit repeat system errors with scripted fixes
 - AI did: Ran the right procedure from a pre-set starting turn
@@ -282,11 +291,11 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 </details>
 
 <details>
-<summary><b>Pharma</b>: 2 use cases</summary>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-pharma-dark.svg"><img alt="Pharma: click to open" src="assets/acc-pharma-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-pharma-1-dark.svg">
-  <img alt="Pharma use case: Production planning & plant / machine optimization. Problem: 16–17 planners took 10 days on monthly batch and machine plans in spreadsheets. AI did: Applied batch rules, checked readiness and equipment qualification, grouped batches, drafted machine-level plan. Solution did: Linked custom objects, shadow run, zero-violation guardrail, accuracy and ROI measurement. Business outcome: Plan in about 1 hour, 80%+ effort cut, fewer batches and changeovers (targets). Maturity M2 · L2; KPI: time. Architecture: ERP + quality exports → 11 linked custom objects → Planning agent: readiness + batch skills → Plan pack → Planner + QA approve." src="assets/uc-pharma-1-light.svg" width="100%">
+  <img alt="Pharma use case: Production planning & plant / machine optimization. Problem: 16–17 planners took 10 days on monthly batch and machine plans in spreadsheets. AI did: Applied batch rules, checked readiness and equipment qualification, grouped batches, drafted machine-level plan. Solution did: Linked custom objects, shadow run, zero-violation guardrail, accuracy and ROI measurement. Business outcome: Plan in about 1 hour, 80%+ effort cut, fewer batches and changeovers (targets). KPI: time. Architecture: ERP + quality exports → 11 linked custom objects → Planning agent: readiness + batch skills → Plan pack → Planner + QA approve." src="assets/uc-pharma-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -310,7 +319,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Production planning & plant / machine optimization** · M2 · L2 · Plan in about 1 hour, 80%+ effort cut, fewer batches and changeovers (targets)
+**Production planning & plant / machine optimization** · Plan in about 1 hour, 80%+ effort cut, fewer batches and changeovers (targets)
 
 - Problem: 16–17 planners took 10 days on monthly batch and machine plans in spreadsheets
 - AI did: Applied batch rules, checked readiness and equipment qualification, grouped batches, drafted machine-level plan
@@ -319,12 +328,12 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-pharma-2-dark.svg">
-  <img alt="Pharma use case: Conversational analytics (sales & market data). Problem: Business users queue behind central analysts for sales and market answers. AI did: Answered multi-domain questions in natural language. Solution did: Semantic layer, annotations, persona access control, synthetic data, cost logging. Business outcome: Self-serve answers, 99%+ consistency, transparent cost (targets). Maturity M1–M2 · L2; KPI: time. Architecture: Sample data → Synthetic generator → Semantic layer + annotations → Analytics assistant → Persona-scoped answers + cost log." src="assets/uc-pharma-2-light.svg" width="100%">
+  <img alt="Pharma use case: Conversational analytics (sales & market data). Problem: Business users queue behind central analysts for sales and market answers. AI did: Answered multi-domain questions in natural language. Solution did: Catalog sync of BigQuery metadata, semantic layer + annotations, runtime query generation, persona access, cost logging. Business outcome: Self-serve answers, 99%+ consistency, transparent cost (targets). KPI: time. Architecture: Google BigQuery → Metadata catalog sync → Semantic layer + annotations → Runtime query generation → Analytics answers + cost log." src="assets/uc-pharma-2-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/wf-pharma-2-dark.svg">
-  <img alt="Solution workflow (conversational) for Conversational analytics (sales & market data): 1 trigger: Business user asks a question in natural language → request with persona; 2 guardrail: Persona access control and region/brand scope applied before any query → scoped request; 3 agent: Reads guidance, synonym map and field annotations; resolves metric and entities → query plan; 4 decision: Native text-to-SQL can see the custom fields? yes → step 5 / no → step 6; 5 skill: Generates and runs SQL over annotated objects → result set; 6 skill: Calls the domain query skill or cross-domain join skill → result set; 7 agent: Answers with table, period and scope using business labels, refusing schema enumeration and out-of-scope data → answer; 8 system: Logs tokens, cost and response time per query → cost and latency record; 9 human: QA reviewers score the harness run against ground truths computed outside the platform → pass rate; 10 outcome: Self-serve answers with consistency to certified reports and transparent cost (targets) → fewer analyst tickets" src="assets/wf-pharma-2-light.svg" width="100%">
+  <img alt="Solution workflow (conversational) for Conversational analytics (sales & market data): 1 trigger: Business user asks a question in natural language → request with persona; 2 guardrail: Persona access control and region/brand scope applied before any query → scoped request; 3 system: Catalog sync pulls table and column metadata from Google BigQuery → governed metadata catalog; 4 agent: Reads guidance, synonym map and field annotations; resolves metric and entities → query plan; 5 decision: Native text-to-SQL can see the custom fields? yes → step 6 / no → step 7; 6 skill: Generates SQL at runtime from the catalog and runs it on BigQuery → result set; 7 skill: Calls the domain query skill or cross-domain join skill → result set; 8 agent: Answers with table, period and scope using business labels, refusing schema enumeration and out-of-scope data → answer; 9 system: Logs tokens, cost and response time per query → cost and latency record; 10 human: QA reviewers score the harness run against ground truths computed outside the platform → pass rate; 11 outcome: Self-serve answers with consistency to certified reports and transparent cost (targets) → fewer analyst tickets" src="assets/wf-pharma-2-light.svg" width="100%">
 </picture>
 
 <details>
@@ -332,77 +341,79 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 1. **Trigger** (loop step 2): Business user asks a question in natural language → request with persona
 2. **Guardrail** (loop step 5): Persona access control and region/brand scope applied before any query → scoped request
-3. **Agent** (loop step 4): Reads guidance, synonym map and field annotations; resolves metric and entities → query plan
-4. **Decision** (loop step 4): Native text-to-SQL can see the custom fields? yes → step 5 / no → step 6
-5. **Skill** (loop step 4): Generates and runs SQL over annotated objects → result set
-6. **Skill** (loop step 4): Calls the domain query skill or cross-domain join skill → result set
-7. **Agent** (loop step 4): Answers with table, period and scope using business labels, refusing schema enumeration and out-of-scope data → answer
-8. **System** (loop step 3): Logs tokens, cost and response time per query → cost and latency record
-9. **Human** (loop step 6): QA reviewers score the harness run against ground truths computed outside the platform → pass rate
-10. **Outcome** (loop step 7): Self-serve answers with consistency to certified reports and transparent cost (targets) → fewer analyst tickets
+3. **System** (loop step 3): Catalog sync pulls table and column metadata from Google BigQuery → governed metadata catalog
+4. **Agent** (loop step 4): Reads guidance, synonym map and field annotations; resolves metric and entities → query plan
+5. **Decision** (loop step 4): Native text-to-SQL can see the custom fields? yes → step 6 / no → step 7
+6. **Skill** (loop step 4): Generates SQL at runtime from the catalog and runs it on BigQuery → result set
+7. **Skill** (loop step 4): Calls the domain query skill or cross-domain join skill → result set
+8. **Agent** (loop step 4): Answers with table, period and scope using business labels, refusing schema enumeration and out-of-scope data → answer
+9. **System** (loop step 3): Logs tokens, cost and response time per query → cost and latency record
+10. **Human** (loop step 6): QA reviewers score the harness run against ground truths computed outside the platform → pass rate
+11. **Outcome** (loop step 7): Self-serve answers with consistency to certified reports and transparent cost (targets) → fewer analyst tickets
 
 </details>
 
-**Conversational analytics (sales & market data)** · M1–M2 · L2 · Self-serve answers, 99%+ consistency, transparent cost (targets)
+**Conversational analytics (sales & market data)** · Self-serve answers, 99%+ consistency, transparent cost (targets)
 
 - Problem: Business users queue behind central analysts for sales and market answers
 - AI did: Answered multi-domain questions in natural language
-- Solution did: Semantic layer, annotations, persona access control, synthetic data, cost logging
-- Architecture: Sample data → Synthetic generator → Semantic layer + annotations → Analytics assistant → Persona-scoped answers + cost log
+- Solution did: Catalog sync of BigQuery metadata, semantic layer + annotations, runtime query generation, persona access, cost logging
+- Architecture: Google BigQuery → Metadata catalog sync → Semantic layer + annotations → Runtime query generation → Analytics answers + cost log
 
 [Open the Pharma page](use-cases/pharma.md)
 
 </details>
 
 <details>
-<summary><b>IT services</b>: 1 use case</summary>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-it-services-dark.svg"><img alt="IT services: click to open" src="assets/acc-it-services-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-it-services-1-dark.svg">
-  <img alt="IT services use case: Cloud managed-services support transformation. Problem: Tickets took 25–40 min of manual alert correlation and drafting. AI did: Classified, correlated alerts, drafted replies and SOP steps. Solution did: One-action workflow, alert pipeline, P1/P2 hard block, human confirm gates. Business outcome: Under 5 min, 2x customers per team (targets). Maturity M3–M4 · L4; KPI: time. Architecture: Email · portal · cloud alarms → Correlation + dedupe → Incident + knowledge graph → Agent: classify P1–P4, draft → Humans confirm; P1/P2 human-only." src="assets/uc-it-services-1-light.svg" width="100%">
+  <img alt="IT services use case: Cloud managed-services support transformation. Problem: Tickets took 25–40 min of manual alert correlation and drafting. AI did: Auto-tracked incidents from observability alerts, triaged and classified, drafted replies and SOP steps. Solution did: Observability platform → auto incident tracking and AI triage; one-action workflow, P1/P2 hard block, human confirm gates. Business outcome: Under 5 min, 2x customers per team (targets). KPI: time. Architecture: Observability alerts · email · portal → Auto incident tracking → Correlation + dedupe → AI triage: classify P1–P4, draft → Humans confirm; P1/P2 human-only." src="assets/uc-it-services-1-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/wf-it-services-1-dark.svg">
-  <img alt="Solution workflow (hybrid) for Cloud managed-services support transformation: 1 trigger: Ticket arrives by email, portal, team chat or legacy-ticket sync, or a correlated alert incident arrives by webhook → ticket or incident created; 2 workflow: Fires once on creation and calls the main agent → one AI action; 3 agent: Scans for P1/P2 emergency signals, classifies type, category, priority → structured output; 4 decision: P1/P2 or change request? yes → step 5 / no → step 6; 5 guardrail: No AI reply; route to on-call queue or approval board → human-only handling; 6 skill: Searches KB and runbooks; for alerts, graph lookup and on-demand cloud log and metric pulls → grounded context; 7 agent: Drafts the reply or customer notification and SOP checklist, or NO_RESPONSE → draft; 8 human: Reviews, personalises and approves send (100% on customer-impacting actions; supervised mode early on) → sent communication; 9 workflow: Awaiting-requester stage then auto-resolve and close after N days of silence; incident resolution closes linked tickets → closed records; 10 outcome: Alert-to-customer notice and human touch-time under 5 minutes (target) → more customers per team" src="assets/wf-it-services-1-light.svg" width="100%">
+  <img alt="Solution workflow (hybrid) for Cloud managed-services support transformation: 1 trigger: Observability platform raises an alert, or a ticket arrives by email, portal or team chat → event; 2 system: Auto incident tracking: alerts are correlated, de-duplicated and opened as a tracked incident linked to affected tickets → incident; 3 workflow: Fires once on creation and calls the main agent → one AI action; 4 agent: AI triage: scans for P1/P2 emergency signals, classifies type, category, priority → structured output; 5 decision: P1/P2 or change request? yes → step 6 / no → step 7; 6 guardrail: No AI reply; route to on-call queue or approval board → human-only handling; 7 skill: Searches KB and runbooks; for alerts, graph lookup and on-demand cloud log and metric pulls → grounded context; 8 agent: Drafts the reply or customer notification and SOP checklist, or NO_RESPONSE → draft; 9 human: Reviews, personalises and approves send (100% on customer-impacting actions; supervised mode early on) → sent communication; 10 workflow: Awaiting-requester stage then auto-resolve and close after N days of silence; incident resolution closes linked tickets → closed records; 11 outcome: Alert-to-customer notice and human touch-time under 5 minutes (target) → more customers per team" src="assets/wf-it-services-1-light.svg" width="100%">
 </picture>
 
 <details>
 <summary>Workflow steps as text: Cloud managed-services support transformation</summary>
 
-1. **Trigger** (loop step 2): Ticket arrives by email, portal, team chat or legacy-ticket sync, or a correlated alert incident arrives by webhook → ticket or incident created
-2. **Workflow** (loop step 4): Fires once on creation and calls the main agent → one AI action
-3. **Agent** (loop step 4): Scans for P1/P2 emergency signals, classifies type, category, priority → structured output
-4. **Decision** (loop step 4): P1/P2 or change request? yes → step 5 / no → step 6
-5. **Guardrail** (loop step 5): No AI reply; route to on-call queue or approval board → human-only handling
-6. **Skill** (loop step 4): Searches KB and runbooks; for alerts, graph lookup and on-demand cloud log and metric pulls → grounded context
-7. **Agent** (loop step 4): Drafts the reply or customer notification and SOP checklist, or NO_RESPONSE → draft
-8. **Human** (loop step 5): Reviews, personalises and approves send (100% on customer-impacting actions; supervised mode early on) → sent communication
-9. **Workflow** (loop step 4): Awaiting-requester stage then auto-resolve and close after N days of silence; incident resolution closes linked tickets → closed records
-10. **Outcome** (loop step 7): Alert-to-customer notice and human touch-time under 5 minutes (target) → more customers per team
+1. **Trigger** (loop step 2): Observability platform raises an alert, or a ticket arrives by email, portal or team chat → event
+2. **System** (loop step 3): Auto incident tracking: alerts are correlated, de-duplicated and opened as a tracked incident linked to affected tickets → incident
+3. **Workflow** (loop step 4): Fires once on creation and calls the main agent → one AI action
+4. **Agent** (loop step 4): AI triage: scans for P1/P2 emergency signals, classifies type, category, priority → structured output
+5. **Decision** (loop step 4): P1/P2 or change request? yes → step 6 / no → step 7
+6. **Guardrail** (loop step 5): No AI reply; route to on-call queue or approval board → human-only handling
+7. **Skill** (loop step 4): Searches KB and runbooks; for alerts, graph lookup and on-demand cloud log and metric pulls → grounded context
+8. **Agent** (loop step 4): Drafts the reply or customer notification and SOP checklist, or NO_RESPONSE → draft
+9. **Human** (loop step 5): Reviews, personalises and approves send (100% on customer-impacting actions; supervised mode early on) → sent communication
+10. **Workflow** (loop step 4): Awaiting-requester stage then auto-resolve and close after N days of silence; incident resolution closes linked tickets → closed records
+11. **Outcome** (loop step 7): Alert-to-customer notice and human touch-time under 5 minutes (target) → more customers per team
 
 </details>
 
-**Cloud managed-services support transformation** · M3–M4 · L4 · Under 5 min, 2x customers per team (targets)
+**Cloud managed-services support transformation** · Under 5 min, 2x customers per team (targets)
 
 - Problem: Tickets took 25–40 min of manual alert correlation and drafting
-- AI did: Classified, correlated alerts, drafted replies and SOP steps
-- Solution did: One-action workflow, alert pipeline, P1/P2 hard block, human confirm gates
-- Architecture: Email · portal · cloud alarms → Correlation + dedupe → Incident + knowledge graph → Agent: classify P1–P4, draft → Humans confirm; P1/P2 human-only
+- AI did: Auto-tracked incidents from observability alerts, triaged and classified, drafted replies and SOP steps
+- Solution did: Observability platform → auto incident tracking and AI triage; one-action workflow, P1/P2 hard block, human confirm gates
+- Architecture: Observability alerts · email · portal → Auto incident tracking → Correlation + dedupe → AI triage: classify P1–P4, draft → Humans confirm; P1/P2 human-only
 
 [Open the IT services page](use-cases/it-services.md)
 
 </details>
 
 <details>
-<summary><b>Marketing</b>: 1 use case</summary>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-marketing-dark.svg"><img alt="Marketing: click to open" src="assets/acc-marketing-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-marketing-1-dark.svg">
-  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: +50% conversion to proposal stage (achieved). Maturity M1–M2 · L2; KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="assets/uc-marketing-1-light.svg" width="100%">
+  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: +50% conversion to proposal stage (achieved). KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="assets/uc-marketing-1-light.svg" width="100%">
 </picture>
 
-**Predictive marketing at MoEngage (2021–24)** · M1–M2 · L2 · +50% conversion to proposal stage (achieved)
+**Predictive marketing at MoEngage (2021–24)** · +50% conversion to proposal stage (achieved)
 
 - Problem: Right message, right user, right time, right channel (BFSI and retail)
 - AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B
@@ -431,7 +442,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 6. **REST vs GraphQL**: REST: many endpoints, fixed shapes, N+1 calls. GraphQL: one exact nested query, cost-based limits, errors that arrive with HTTP 200. *Business:* fewer calls, faster syncs, predictable limits. *Used in:* Shopify GraphQL · Xray.
 7. **Idempotent typed IDs**: Stable ids prefixed by type, so retries never duplicate and order-123 never collides with return-123. *Business:* no duplicates or collisions, so reports stay trusted. *Used in:* Every connector.
 8. **Backoff with jitter**: Retry 429s and 5xx with exponential backoff plus jitter. Never retry a 4xx: that is a bug. *Business:* syncs survive rate limits without manual reruns. *Used in:* Every connector.
-9. **Checkpoint after verified writes**: Save state only after the upload is verified; offload state past 8 MB to an artifact. *Business:* no lost or duplicated data after a crash. *Used in:* AirSync state + artifacts.
+9. **Checkpoint after verified writes**: Save state only after the upload is verified; offload state past 8 MB to an artifact. *Business:* no lost or duplicated data after a crash. *Used in:* Sync state + artifacts.
 
 </details>
 

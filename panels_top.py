@@ -12,7 +12,7 @@ SUN_INK = "#151515"  # text on the yellow core, both themes
 # ------------------------------------------------------------------ hero
 ORBIT = [(160, "Knowledge", "lime"), (205, "ERP", "lilac"), (250, "CRM", "sky"), (290, "Ticketing", "yellow"),
          (335, "HR", "peach"), (20, "Commerce", "mint"), (60, "Logistics", "lilac"), (120, "Voice", "pink")]
-ACTIONS = ["resolve case", "re-book", "notify"]
+ACTIONS = ["deflect", "resolve", "automate"]
 
 
 def _hero_left(T):
@@ -26,7 +26,7 @@ def _hero_left(T):
     o.append(s)
     b = T["bubbles"]
     row, _ = chip_row(56, 430, [("Context engineering", *b["lilac"]), ("Multi-agent workflows", *b["lime"]),
-                                ("16+ AirSync connectors", *b["yellow"])], gap=8, size=12.5, h=32)
+                                ("16+ production connectors", *b["yellow"])], gap=8, size=12.5, h=32)
     o.append(row)
     return "".join(o)
 

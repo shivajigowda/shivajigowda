@@ -11,6 +11,7 @@ from pathlib import Path
 
 from panels_agents import AGENTS, agents
 from panels_approach import STEPS, approach
+from panels_awards import AWARDS, awards
 from panels_build import relay
 from panels_concepts import CONCEPTS, concepts
 from panels_curve import curve
@@ -19,7 +20,7 @@ from panels_maturity import maturity
 from panels_method import method, stack, writing
 from panels_solution import solution
 from panels_top import hero, metrics
-from panels_usecase import case_card, tabbar, workflow
+from panels_usecase import accbtn, case_card, tabbar, tabbtn, workflow
 from panels_world import constellation, statement
 from readme import case_alt, wf_alt, write_all
 from svgkit import doc
@@ -34,22 +35,22 @@ MAX_BYTES = 150 * 1024
 PANELS = [
     ("hero", hero, "Shivaji M D, AI Solutions Engineer, Bengaluru",
      "From connectors that sync to agents that act. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice "
-     "and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: resolve case, "
-     "re-book, notify."),
+     "and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, "
+     "resolve, automate."),
     ("metrics", metrics, "Business outcomes",
      "Under 5 minutes per airline payments-desk case, down from 15-30 (target); 16+ systems unified into one governed context; +50% conversion to proposal stage "
      "at MoEngage; 70+ BFSI projects; 13+ years in SaaS across engineering, customer success, presales and AI solutions."),
-    ("maturity", maturity, "The AI maturity curve",
-     "Two dotted maturity curves. For businesses: M1 unify and see, M2 agentic bridges, M3 end-to-end chains, "
-     "M4 governed enterprise. For people: L1 AI answers, L2 assists, L3 acts, L4 orchestrates, L5 governs. "
-     "Markers: pharma analytics and marketing at M1-M2; BFSI (2), pharma planning and automotive at M2; airlines "
-     "and retail and D2C (2) at M3; IT services at M3-M4. Marketing, pharma (2) and automotive at L2; airlines, "
-     "BFSI (2) and retail and D2C (2) at L3; IT services at L4."),
+    ("maturity", maturity, "The AI maturity journey",
+     "AI-centric employees create AI-centric companies. Two dotted curves. The AI employee journey: AI blind, "
+     "AI curious, daily AI, expanding AI, AI first, AI evangelist. The AI company journey, running behind it: AI desert, "
+     "AI tools, AI initiatives, AI champions, AI platform, AI-centric business."),
     ("evolution", evolution, "How I evolved",
      "Latest first: 2024-now AI Solutions Engineer at DevRev (generative and agentic AI, L4, M3-M4; airline "
      "payments desk 15-30 to under 5 min per case, target), then 2021-2024 Presales Manager to Lead Solutions Consulting at MoEngage "
      "(predictive ML, L2; +50% conversion to proposal). A dotted line points ahead to "
      "Solutions Architect, governed enterprise AI."),
+    ("awards", awards, "Recognition",
+     "Awards, latest first: " + "; ".join(f"{a[1]}, {a[2]}, {a[3]}" for a in AWARDS) + "."),
     ("approach", approach, "My approach",
      "A seven-step problem-solving loop: " + "; ".join(f"{i + 1} {t}" for i, (t, _, _) in enumerate(STEPS))
      + ". Each industry tab is one run of the loop."),
@@ -68,7 +69,7 @@ PANELS = [
     ("statement", statement, "Why work with me?", "Your AI is only as good as the context it can govern."),
     ("method", method, "How I run an engagement", "Nine engagement blocks as a staircase."),
 ]
-README_ORDER = ["hero", "metrics", "maturity", "evolution", "approach", "tabs-airlines", "uc-airlines-1",
+README_ORDER = ["hero", "metrics", "maturity", "evolution", "awards", "approach", "tabs-airlines", "uc-airlines-1",
                 "wf-airlines-1", "concepts", "agents", "stack", "writing"]
 
 
@@ -78,6 +79,11 @@ def dynamic():
     for slug, label in TABS:
         out.append((f"tabs-{slug}", lambda T, s=slug: tabbar(T, s), f"Industry tabs: {label}",
                     f"Industry tabs with {label} selected."))
+        for on in (True, False):
+            out.append((f"tab-{slug}-{'on' if on else 'off'}", lambda T, l=label, on=on: tabbtn(T, l, on),
+                        f"Tab: {label}", f"{label} tab{' (selected)' if on else ''}"))
+        out.append((f"acc-{slug}", lambda T, l=label, n=len(CASES[slug]): accbtn(T, l, n), f"Open {label}",
+                    f"{label}: click to open"))
         for n, c in enumerate(CASES[slug], 1):
             out.append((f"uc-{slug}-{n}", lambda T, l=label, c=c, n=n: case_card(T, l, c, n), c["use"],
                         case_alt(label, c)))

@@ -2,16 +2,19 @@
 
 [← back to profile](../README.md)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/tabs-airlines-dark.svg">
-  <img alt="Industry tabs, Airlines selected" src="../assets/tabs-airlines-light.svg" width="100%">
-</picture>
-
-<a href="airlines.md"><img alt="Airlines" src="https://img.shields.io/badge/Airlines-6E22FE?style=flat-square"></a> <a href="bfsi-fintech.md"><img alt="BFSI & Fintech" src="https://img.shields.io/badge/BFSI%20%26%20Fintech-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="retail-d2c.md"><img alt="Retail & D2C" src="https://img.shields.io/badge/Retail%20%26%20D2C-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="automotive.md"><img alt="Automotive" src="https://img.shields.io/badge/Automotive-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="pharma.md"><img alt="Pharma" src="https://img.shields.io/badge/Pharma-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="it-services.md"><img alt="IT services" src="https://img.shields.io/badge/IT%20services-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="marketing.md"><img alt="Marketing" src="https://img.shields.io/badge/Marketing-F2ECFE?style=flat-square&labelColor=F2ECFE"></a>
+<p align="center">
+<a href="airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-airlines-on-dark.svg"><img alt="Airlines" src="../assets/tab-airlines-on-light.svg" height="40"></picture></a>
+<a href="bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-bfsi-fintech-off-dark.svg"><img alt="BFSI & Fintech" src="../assets/tab-bfsi-fintech-off-light.svg" height="40"></picture></a>
+<a href="retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-retail-d2c-off-dark.svg"><img alt="Retail & D2C" src="../assets/tab-retail-d2c-off-light.svg" height="40"></picture></a>
+<a href="automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-automotive-off-dark.svg"><img alt="Automotive" src="../assets/tab-automotive-off-light.svg" height="40"></picture></a>
+<a href="pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-pharma-off-dark.svg"><img alt="Pharma" src="../assets/tab-pharma-off-light.svg" height="40"></picture></a>
+<a href="it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-it-services-off-dark.svg"><img alt="IT services" src="../assets/tab-it-services-off-light.svg" height="40"></picture></a>
+<a href="marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-marketing-off-dark.svg"><img alt="Marketing" src="../assets/tab-marketing-off-light.svg" height="40"></picture></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-airlines-1-dark.svg">
-  <img alt="Airlines use case: Payments desk transformation. Problem: Paid-but-unbooked cases took 15–30 min across three systems. AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case. Solution did: Integrated three systems; human confirm gates; escalation matrix and audits. Business outcome: Under 5 min per case (target). Maturity M3 · L3; KPI: time. Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close." src="../assets/uc-airlines-1-light.svg" width="100%">
+  <img alt="Airlines use case: Payments desk transformation. Problem: Paid-but-unbooked cases took 15–30 min across three systems. AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case. Solution did: Integrated three systems; human confirm gates; escalation matrix and audits. Business outcome: Under 5 min per case (target). KPI: time. Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close." src="../assets/uc-airlines-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -36,7 +39,7 @@
 
 </details>
 
-**Payments desk transformation** · M3 · L3 · Under 5 min per case (target)
+**Payments desk transformation** · Under 5 min per case (target)
 
 - Problem: Paid-but-unbooked cases took 15–30 min across three systems
 - AI did: Searched, reserved, enrolled, billed, retrieved booking, closed case

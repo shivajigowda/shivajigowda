@@ -2,25 +2,28 @@
 
 [← back to profile](../README.md)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/tabs-retail-d2c-dark.svg">
-  <img alt="Industry tabs, Retail & D2C selected" src="../assets/tabs-retail-d2c-light.svg" width="100%">
-</picture>
-
-<a href="airlines.md"><img alt="Airlines" src="https://img.shields.io/badge/Airlines-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="bfsi-fintech.md"><img alt="BFSI & Fintech" src="https://img.shields.io/badge/BFSI%20%26%20Fintech-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="retail-d2c.md"><img alt="Retail & D2C" src="https://img.shields.io/badge/Retail%20%26%20D2C-6E22FE?style=flat-square"></a> <a href="automotive.md"><img alt="Automotive" src="https://img.shields.io/badge/Automotive-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="pharma.md"><img alt="Pharma" src="https://img.shields.io/badge/Pharma-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="it-services.md"><img alt="IT services" src="https://img.shields.io/badge/IT%20services-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="marketing.md"><img alt="Marketing" src="https://img.shields.io/badge/Marketing-F2ECFE?style=flat-square&labelColor=F2ECFE"></a>
+<p align="center">
+<a href="airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-airlines-off-dark.svg"><img alt="Airlines" src="../assets/tab-airlines-off-light.svg" height="40"></picture></a>
+<a href="bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-bfsi-fintech-off-dark.svg"><img alt="BFSI & Fintech" src="../assets/tab-bfsi-fintech-off-light.svg" height="40"></picture></a>
+<a href="retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-retail-d2c-on-dark.svg"><img alt="Retail & D2C" src="../assets/tab-retail-d2c-on-light.svg" height="40"></picture></a>
+<a href="automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-automotive-off-dark.svg"><img alt="Automotive" src="../assets/tab-automotive-off-light.svg" height="40"></picture></a>
+<a href="pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-pharma-off-dark.svg"><img alt="Pharma" src="../assets/tab-pharma-off-light.svg" height="40"></picture></a>
+<a href="it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-it-services-off-dark.svg"><img alt="IT services" src="../assets/tab-it-services-off-light.svg" height="40"></picture></a>
+<a href="marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-marketing-off-dark.svg"><img alt="Marketing" src="../assets/tab-marketing-off-light.svg" height="40"></picture></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-retail-d2c-1-dark.svg">
-  <img alt="Retail & D2C use case: Apparel retail AI transformation (proposal). Problem: Two weeks a month of Excel to derive COGS and P&L. AI did: Explained variances, drafted outputs, flagged availability exceptions (proposed). Solution did: Unified sources, quality gates, versioned finance rules, lineage, shadow runs. Business outcome: Automated explainable close; availability above 98% (targets). Maturity M1–M3 · L3; KPI: time. Architecture: ERP · DMS · POS · e-commerce → Sync connectors + quality gates → Knowledge graph → Area agents + workflow engine → App · chat · export." src="../assets/uc-retail-d2c-1-light.svg" width="100%">
+  <img alt="Retail & D2C use case: Apparel retail AI transformation. Problem: Two weeks a month of Excel to derive COGS and P&L. AI did: Explained variances, drafted outputs, flagged availability exceptions (proposed). Solution did: Unified sources, quality gates, versioned finance rules, lineage, shadow runs. Business outcome: Automated explainable close; availability above 98% (targets). KPI: time. Architecture: ERP · DMS · POS · e-commerce → Sync connectors + quality gates → Knowledge graph → Area agents + workflow engine → App · chat · export." src="../assets/uc-retail-d2c-1-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/wf-retail-d2c-1-dark.svg">
-  <img alt="Solution workflow (scheduled/batch) for Apparel retail AI transformation (proposal): 1 trigger: Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls; 2 system: Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data; 3 guardrail: Quality gate checks freshness, duplicates, missing keys and control totals → pass or block insights; 4 decision: Gate passed? yes → step 5 / no → insights blocked and data owner alerted; 5 system: Maps to the common grain (SKU, pack size, channel, month) in the knowledge graph with lineage and permissions → trusted base; 6 agent: Finance and planning agents run versioned rules for price bridge, COGS, forecast and plan vs actual; model explains, drafts → draft outputs; 7 human: Finance and planners approve key outputs at each gate → approved figures; 8 skill: Availability control tower raises debounced alerts with causes and next actions → exceptions; 9 system: Delivers via app, email, team chat, spreadsheet or PDF with data-as-of time; audit log and value ledger → governed delivery; 10 outcome: Automated explainable monthly close and earlier stock-out flags (targets) → time and working-capital gains" src="../assets/wf-retail-d2c-1-light.svg" width="100%">
+  <img alt="Solution workflow (scheduled/batch) for Apparel retail AI transformation: 1 trigger: Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls; 2 system: Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data; 3 guardrail: Quality gate checks freshness, duplicates, missing keys and control totals → pass or block insights; 4 decision: Gate passed? yes → step 5 / no → insights blocked and data owner alerted; 5 system: Maps to the common grain (SKU, pack size, channel, month) in the knowledge graph with lineage and permissions → trusted base; 6 agent: Finance and planning agents run versioned rules for price bridge, COGS, forecast and plan vs actual; model explains, drafts → draft outputs; 7 human: Finance and planners approve key outputs at each gate → approved figures; 8 skill: Availability control tower raises debounced alerts with causes and next actions → exceptions; 9 system: Delivers via app, email, team chat, spreadsheet or PDF with data-as-of time; audit log and value ledger → governed delivery; 10 outcome: Automated explainable monthly close and earlier stock-out flags (targets) → time and working-capital gains" src="../assets/wf-retail-d2c-1-light.svg" width="100%">
 </picture>
 
 <details>
-<summary>Workflow steps as text: Apparel retail AI transformation (proposal)</summary>
+<summary>Workflow steps as text: Apparel retail AI transformation</summary>
 
 1. **Trigger** (loop step 2): Scheduled sync (daily by default, intraday where needed, monthly for close packs) → source pulls
 2. **System** (loop step 3): Connectors pull read-only from ERP exports, DMS, POS, e-commerce, planning tool, HRMS and file drops, deltas only → staged data
@@ -35,7 +38,7 @@
 
 </details>
 
-**Apparel retail AI transformation (proposal)** · M1–M3 · L3 · Automated explainable close; availability above 98% (targets)
+**Apparel retail AI transformation** · Automated explainable close; availability above 98% (targets)
 
 - Problem: Two weeks a month of Excel to derive COGS and P&L
 - AI did: Explained variances, drafted outputs, flagged availability exceptions (proposed)
@@ -44,7 +47,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-retail-d2c-2-dark.svg">
-  <img alt="Retail & D2C use case: Customer-experience agent (live). Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge (achieved). Maturity M3 · L3; KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="../assets/uc-retail-d2c-2-light.svg" width="100%">
+  <img alt="Retail & D2C use case: Customer-experience agent (live). Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge (achieved). KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="../assets/uc-retail-d2c-2-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -68,7 +71,7 @@
 
 </details>
 
-**Customer-experience agent (live)** · M3 · L3 · ~76% deflection through ~14x surge (achieved)
+**Customer-experience agent (live)** · ~76% deflection through ~14x surge (achieved)
 
 - Problem: Brittle 95-node bot could not absorb launch-surge support
 - AI did: Chose skills; answered orders, returns, refunds in natural language

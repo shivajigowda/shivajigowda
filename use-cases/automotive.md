@@ -2,16 +2,19 @@
 
 [← back to profile](../README.md)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/tabs-automotive-dark.svg">
-  <img alt="Industry tabs, Automotive selected" src="../assets/tabs-automotive-light.svg" width="100%">
-</picture>
-
-<a href="airlines.md"><img alt="Airlines" src="https://img.shields.io/badge/Airlines-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="bfsi-fintech.md"><img alt="BFSI & Fintech" src="https://img.shields.io/badge/BFSI%20%26%20Fintech-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="retail-d2c.md"><img alt="Retail & D2C" src="https://img.shields.io/badge/Retail%20%26%20D2C-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="automotive.md"><img alt="Automotive" src="https://img.shields.io/badge/Automotive-6E22FE?style=flat-square"></a> <a href="pharma.md"><img alt="Pharma" src="https://img.shields.io/badge/Pharma-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="it-services.md"><img alt="IT services" src="https://img.shields.io/badge/IT%20services-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="marketing.md"><img alt="Marketing" src="https://img.shields.io/badge/Marketing-F2ECFE?style=flat-square&labelColor=F2ECFE"></a>
+<p align="center">
+<a href="airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-airlines-off-dark.svg"><img alt="Airlines" src="../assets/tab-airlines-off-light.svg" height="40"></picture></a>
+<a href="bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-bfsi-fintech-off-dark.svg"><img alt="BFSI & Fintech" src="../assets/tab-bfsi-fintech-off-light.svg" height="40"></picture></a>
+<a href="retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-retail-d2c-off-dark.svg"><img alt="Retail & D2C" src="../assets/tab-retail-d2c-off-light.svg" height="40"></picture></a>
+<a href="automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-automotive-on-dark.svg"><img alt="Automotive" src="../assets/tab-automotive-on-light.svg" height="40"></picture></a>
+<a href="pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-pharma-off-dark.svg"><img alt="Pharma" src="../assets/tab-pharma-off-light.svg" height="40"></picture></a>
+<a href="it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-it-services-off-dark.svg"><img alt="IT services" src="../assets/tab-it-services-off-light.svg" height="40"></picture></a>
+<a href="marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-marketing-off-dark.svg"><img alt="Marketing" src="../assets/tab-marketing-off-light.svg" height="40"></picture></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-automotive-1-dark.svg">
-  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service (no KPI stated). Maturity M2 · L2 (inferred); KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="../assets/uc-automotive-1-light.svg" width="100%">
+  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service (no KPI stated). KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="../assets/uc-automotive-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -35,7 +38,7 @@
 
 </details>
 
-**Dealer assist & navigation** · M2 · L2 (inferred) · Faster dealer self-service (no KPI stated)
+**Dealer assist & navigation** · Faster dealer self-service (no KPI stated)
 
 - Problem: Dealers hit repeat system errors with scripted fixes
 - AI did: Ran the right procedure from a pre-set starting turn

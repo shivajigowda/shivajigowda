@@ -2,16 +2,19 @@
 
 [← back to profile](../README.md)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/tabs-bfsi-fintech-dark.svg">
-  <img alt="Industry tabs, BFSI & Fintech selected" src="../assets/tabs-bfsi-fintech-light.svg" width="100%">
-</picture>
-
-<a href="airlines.md"><img alt="Airlines" src="https://img.shields.io/badge/Airlines-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="bfsi-fintech.md"><img alt="BFSI & Fintech" src="https://img.shields.io/badge/BFSI%20%26%20Fintech-6E22FE?style=flat-square"></a> <a href="retail-d2c.md"><img alt="Retail & D2C" src="https://img.shields.io/badge/Retail%20%26%20D2C-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="automotive.md"><img alt="Automotive" src="https://img.shields.io/badge/Automotive-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="pharma.md"><img alt="Pharma" src="https://img.shields.io/badge/Pharma-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="it-services.md"><img alt="IT services" src="https://img.shields.io/badge/IT%20services-F2ECFE?style=flat-square&labelColor=F2ECFE"></a> <a href="marketing.md"><img alt="Marketing" src="https://img.shields.io/badge/Marketing-F2ECFE?style=flat-square&labelColor=F2ECFE"></a>
+<p align="center">
+<a href="airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-airlines-off-dark.svg"><img alt="Airlines" src="../assets/tab-airlines-off-light.svg" height="40"></picture></a>
+<a href="bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-bfsi-fintech-on-dark.svg"><img alt="BFSI & Fintech" src="../assets/tab-bfsi-fintech-on-light.svg" height="40"></picture></a>
+<a href="retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-retail-d2c-off-dark.svg"><img alt="Retail & D2C" src="../assets/tab-retail-d2c-off-light.svg" height="40"></picture></a>
+<a href="automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-automotive-off-dark.svg"><img alt="Automotive" src="../assets/tab-automotive-off-light.svg" height="40"></picture></a>
+<a href="pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-pharma-off-dark.svg"><img alt="Pharma" src="../assets/tab-pharma-off-light.svg" height="40"></picture></a>
+<a href="it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-it-services-off-dark.svg"><img alt="IT services" src="../assets/tab-it-services-off-light.svg" height="40"></picture></a>
+<a href="marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tab-marketing-off-dark.svg"><img alt="Marketing" src="../assets/tab-marketing-off-light.svg" height="40"></picture></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-bfsi-fintech-1-dark.svg">
-  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot to measure; no target). Maturity M2 · L3; KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="../assets/uc-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot to measure; no target). KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="../assets/uc-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -35,7 +38,7 @@
 
 </details>
 
-**Order-to-cash SaaS support PoC** · M2 · L3 · Fewer avoidable tickets (pilot to measure; no target)
+**Order-to-cash SaaS support PoC** · Fewer avoidable tickets (pilot to measure; no target)
 
 - Problem: Rising in-app tickets for questions articles or data could resolve
 - AI did: Answered how-tos, diagnosed tenant issues, categorized tickets
@@ -44,7 +47,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-bfsi-fintech-2-dark.svg">
-  <img alt="BFSI & Fintech use case: NBFC customer support transformation. Problem: Every lender support email triaged by hand, regulators included. AI did: Spotted authority senders, classified, wrote multilingual KB replies. Solution did: Dual-inbox rules, authority block, one-action cost cap, supervised go-live. Business outcome: Fewer manual touches, safe automation (targets). Maturity M2 · L3; KPI: risk. Architecture: Service + complaints inboxes → Ticket-created trigger → Agent: authority scan, classify, mask PII → Category + reply → Human groups for complaints." src="../assets/uc-bfsi-fintech-2-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: NBFC customer support transformation. Problem: Every lender support email triaged by hand, regulators included. AI did: Spotted authority senders, classified, wrote multilingual KB replies. Solution did: Dual-inbox rules, authority block, one-action cost cap, supervised go-live. Business outcome: Fewer manual touches, safe automation (targets). KPI: risk. Architecture: Service + complaints inboxes → Ticket-created trigger → Agent: authority scan, classify, mask PII → Category + reply → Human groups for complaints." src="../assets/uc-bfsi-fintech-2-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -69,7 +72,7 @@
 
 </details>
 
-**NBFC customer support transformation** · M2 · L3 · Fewer manual touches, safe automation (targets)
+**NBFC customer support transformation** · Fewer manual touches, safe automation (targets)
 
 - Problem: Every lender support email triaged by hand, regulators included
 - AI did: Spotted authority senders, classified, wrote multilingual KB replies
