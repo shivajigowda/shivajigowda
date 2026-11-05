@@ -18,7 +18,7 @@ ERAS = [
                     "Retrieval, not stuffing"])],
      "The model is a component; the solution is the product."),
     ("2021–2024", "Presales Manager → Lead Solutions Consulting", "MoEngage · promoted Feb 2023",
-     ("Predictive ML", "lilac"), "journey: expanding ai",
+     ("Predictive ML + GenAI", "lilac"), "journey: expanding ai",
      [("SDKs + Data API", "app · web · server"), ("Warehouse sync", "s3 · sftp · cdp"),
       ("RFM segments", "flows (journeys)"), ("Sherpa models", "bts · mpc · predictions")],
      [("↑", "MAU / DAU"), ("↑", "Retention"), ("↑", "CTR"), ("↑", "CVR")],

@@ -1,10 +1,10 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=0d9ea6cc">
-  <img alt="I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg?v=3d98884d" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=2e1240e4">
+  <img alt="I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg?v=edcd2173" width="100%">
 </picture>
 
 
-**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | 13+ yrs SaaS · 3+ yrs enterprise AI (since 2023) | APJ SE of the Year
+**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | 13+ yrs SaaS · 5+ yrs AI · 3+ yrs GenAI | APJ SE of the Year
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=151515)](https://www.linkedin.com/in/shivaji-m-d-ab983a65) [![Email](https://img.shields.io/badge/Email-shiv.shivaji090%40gmail.com-FDF049?style=for-the-badge&logo=gmail&logoColor=151515&labelColor=151515)](mailto:shiv.shivaji090@gmail.com)
 
@@ -14,15 +14,15 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/evolution-dark.svg?v=e76a1f40">
-  <img alt="Latest first: 2024-now AI Solutions Engineer at DevRev (generative and agentic AI, L4, M3-M4; airline payments desk 15-30 to under 5 min per case, target), then 2021-2024 Presales Manager to Lead Solutions Consulting at MoEngage (predictive ML, L2; +50% conversion to proposal). A dotted line points ahead to Solutions Architect, governed enterprise AI." src="assets/evolution-light.svg?v=2ab271e7" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/evolution-dark.svg?v=c1d4f823">
+  <img alt="Latest first: 2024-now AI Solutions Engineer at DevRev (generative and agentic AI, L4, M3-M4; airline payments desk 15-30 to under 5 min per case, target), then 2021-2024 Presales Manager to Lead Solutions Consulting at MoEngage (predictive ML, L2; +50% conversion to proposal). A dotted line points ahead to Solutions Architect, governed enterprise AI." src="assets/evolution-light.svg?v=e7cdbae9" width="100%">
 </picture>
 
 <details>
 <summary><b>Text version: how I evolved</b></summary>
 
 - **2024–now · AI Solutions Engineer, DevRev → architect** (Generative & agentic AI, journey: ai evangelist). Pipeline: 16+ connectors → Governed context → Multi-agent → Evals + guardrails → outcomes: Hours saved ↑, Cost to serve ↓, Revenue ↑, CSAT ↑. concepts: Context layer, Multi-agent orchestration, Evals, Guardrails, Act-as identity, Retrieval, not stuffing. Learned: The model is a component; the solution is the product.
-- **2021–2024 · Presales Manager → Lead Solutions Consulting, MoEngage · promoted Feb 2023** (Predictive ML, journey: expanding ai). Pipeline: SDKs + Data API → Warehouse sync → RFM segments → Sherpa models → outcomes: MAU / DAU ↑, Retention ↑, CTR ↑, CVR ↑. data in: Android/iOS/Web SDKs, Data API (server events), S3/SFTP imports, Warehouse (BigQuery/Snowflake/Redshift), CDP sources; sherpa (now merlin ai): Best Time to Send, Most Preferred Channel, Predictions (churn & conversion), Dynamic A/B (bandit-style), RFM segments (1–3 per axis), Flows (journeys). Learned: AI is only as good as the event data feeding it.
+- **2021–2024 · Presales Manager → Lead Solutions Consulting, MoEngage · promoted Feb 2023** (Predictive ML + GenAI, journey: expanding ai). Pipeline: SDKs + Data API → Warehouse sync → RFM segments → Sherpa models → outcomes: MAU / DAU ↑, Retention ↑, CTR ↑, CVR ↑. data in: Android/iOS/Web SDKs, Data API (server events), S3/SFTP imports, Warehouse (BigQuery/Snowflake/Redshift), CDP sources; sherpa (now merlin ai): Best Time to Send, Most Preferred Channel, Predictions (churn & conversion), Dynamic A/B (bandit-style), RFM segments (1–3 per axis), Flows (journeys). Learned: AI is only as good as the event data feeding it.
 
 Explainers I used with customers (general techniques, not vendor claims): propensity models are typically gradient-boosted trees; behavioral clustering, e.g. k-means; a multi-armed bandit shifts traffic to the winning variant while still exploring; RFM scores recency, frequency and monetary value; aggregations turn event streams into features (counts, recency, rolling windows).
 
