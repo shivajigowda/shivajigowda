@@ -20,7 +20,7 @@ def _hero_left(T):
     P = T["purple"]
     o.append(rich(54, 168, [[("From connectors", None)], [("that ", None), ("sync", P), (" to agents", None)],
                             [("that ", None), ("act.", P)]], T["ink"], 54, 60))
-    s, _ = para(56, 338, "13 years in B2B SaaS. I take enterprise use cases from CXO discovery to production "
+    s, _ = para(56, 338, "13+ years in SaaS. I take enterprise use cases from CXO discovery to production "
                 "AI agents: the context layer first, then guarded multi-agent workflows on top.",
                 T["ink2"], 16.5, 470, 25)
     o.append(s)
@@ -98,7 +98,7 @@ METRICS = [("<5", " min", "per airline payments-desk case, down from 15–30 (ta
            ("16+", "", "systems unified into one governed context"),
            ("+50%", "", "conversion to proposal stage at MoEngage"),
            ("70+", "", "BFSI projects: banks, NBFCs, insurers, fintechs"),
-           ("13", " yrs", "from data models to agents")]
+           ("13+", " yrs", "in SaaS: engineering, customer success, presales, AI solutions")]
 
 
 def metrics(T):

@@ -38,7 +38,7 @@ PANELS = [
      "re-book, notify."),
     ("metrics", metrics, "Business outcomes",
      "Under 5 minutes per airline payments-desk case, down from 15-30 (target); 16+ systems unified into one governed context; +50% conversion to proposal stage "
-     "at MoEngage; 70+ BFSI projects; 13 years from data models to agents."),
+     "at MoEngage; 70+ BFSI projects; 13+ years in SaaS across engineering, customer success, presales and AI solutions."),
     ("maturity", maturity, "The AI maturity curve",
      "Two dotted maturity curves. For businesses: M1 unify and see, M2 agentic bridges, M3 end-to-end chains, "
      "M4 governed enterprise. For people: L1 AI answers, L2 assists, L3 acts, L4 orchestrates, L5 governs. "

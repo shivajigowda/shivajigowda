@@ -93,12 +93,18 @@ def readme(panels):
         f"</summary>\n\n"
         + "\n".join(case_block(slug, label, n, c, "assets/") for n, c in enumerate(CASES[slug], 1))
         + f"\n[Open the {label} page](use-cases/{slug}.md)\n\n</details>\n" for slug, label in TABS[1:])
+    HEADLINE = ["AI Solutions Engineer · Forward-deployed", "Applied AI, CXO discovery → production",
+                "Agentic & GenAI on messy enterprise stacks", "Evals & guardrails before go-live",
+                "~76% deflection through a 14× launch surge", "Python · TypeScript · MCP"]
     badges = (f"[![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin"
               f"&logoColor=white&labelColor=151515)]({LINKEDIN}) "
               f"[![Email](https://img.shields.io/badge/Email-{quote(EMAIL.replace('-', '--'))}-FDF049?style=for-the-badge"
               f"&logo=gmail&logoColor=151515&labelColor=151515)](mailto:{EMAIL})")
     loop = "\n".join(f"{i + 1}. **{t}**: {d}" for i, (t, d, _) in enumerate(STEPS))
     return f"""{pic('hero', alt['hero'])}
+
+**{HEADLINE[0]}** | {" | ".join(HEADLINE[1:])}
+
 {badges}
 
 {pic('metrics', alt['metrics'])}

@@ -3,11 +3,14 @@
   <img alt="From connectors that sync to agents that act. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: resolve case, re-book, notify." src="assets/hero-light.svg" width="100%">
 </picture>
 
+
+**AI Solutions Engineer · Forward-deployed** | Applied AI, CXO discovery → production | Agentic & GenAI on messy enterprise stacks | Evals & guardrails before go-live | ~76% deflection through a 14× launch surge | Python · TypeScript · MCP
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=151515)](https://www.linkedin.com/in/shivaji-md-ab983a65) [![Email](https://img.shields.io/badge/Email-shiv.shivaji090%40gmail.com-FDF049?style=for-the-badge&logo=gmail&logoColor=151515&labelColor=151515)](mailto:shiv.shivaji090@gmail.com)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
-  <img alt="Under 5 minutes per airline payments-desk case, down from 15-30 (target); 16+ systems unified into one governed context; +50% conversion to proposal stage at MoEngage; 70+ BFSI projects; 13 years from data models to agents." src="assets/metrics-light.svg" width="100%">
+  <img alt="Under 5 minutes per airline payments-desk case, down from 15-30 (target); 16+ systems unified into one governed context; +50% conversion to proposal stage at MoEngage; 70+ BFSI projects; 13+ years in SaaS across engineering, customer success, presales and AI solutions." src="assets/metrics-light.svg" width="100%">
 </picture>
 
 <picture>
