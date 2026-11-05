@@ -410,10 +410,10 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-marketing-1-dark.svg">
-  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: +50% conversion to proposal stage (achieved). KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="assets/uc-marketing-1-light.svg" width="100%">
+  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: Lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved). KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="assets/uc-marketing-1-light.svg" width="100%">
 </picture>
 
-**Predictive marketing at MoEngage (2021–24)** · +50% conversion to proposal stage (achieved)
+**Predictive marketing at MoEngage (2021–24)** · Lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)
 
 - Problem: Right message, right user, right time, right channel (BFSI and retail)
 - AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B

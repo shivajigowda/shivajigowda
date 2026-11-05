@@ -88,7 +88,7 @@ CASES = {
         problem="Right message, right user, right time, right channel (BFSI and retail)",
         ai="Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B",
         solution="SDKs + Data API + warehouse imports, RFM segments, Flows (journeys)",
-        outcome="+50% conversion to proposal stage (achieved)", tag="M1–M2 · L2", kpi="revenue",
+        outcome="Lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)", tag="M1–M2 · L2", kpi="revenue",
         arch=["SDKs + Data API", "Warehouse + S3/SFTP imports", "RFM segments", "Sherpa: BTS · MPC · predictions",
               "Flows + Dynamic A/B"])],
 }
