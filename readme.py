@@ -9,8 +9,8 @@ from panels_evolution import ERAS
 from panels_usecase import loop_step
 from usecases import CASES, TABS, workflow_for
 
-LINKEDIN = "https://www.linkedin.com/in/shivaji-md-ab983a65"
-ARTICLES = "https://www.linkedin.com/in/shivaji-md-ab983a65/recent-activity/articles/"
+LINKEDIN = "https://www.linkedin.com/in/shivaji-m-d-ab983a65"
+ARTICLES = "https://www.linkedin.com/in/shivaji-m-d-ab983a65/recent-activity/articles/"
 EMAIL = "shiv.shivaji090@gmail.com"
 
 
