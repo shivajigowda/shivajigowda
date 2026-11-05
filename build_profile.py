@@ -39,7 +39,7 @@ PANELS = [
      "resolve, automate."),
     ("metrics", metrics, "Business outcomes",
      "Under 5 minutes per airline payments-desk case, down from 15-30; 16+ systems unified into one governed context; +50% conversion to proposal stage "
-     "at MoEngage; 70+ BFSI projects; 13+ years in SaaS across engineering, customer success, presales and AI solutions."),
+     "at MoEngage; 13+ years in SaaS across engineering, customer success, presales and AI solutions."),
     ("maturity", maturity, "The AI maturity journey",
      "AI-centric employees create AI-centric companies. Two dotted curves. The AI employee journey: AI blind, "
      "AI curious, daily AI, expanding AI, AI first, AI evangelist. The AI company journey, running behind it: AI desert, "
@@ -69,7 +69,7 @@ PANELS = [
     ("statement", statement, "Why work with me?", "Your AI is only as good as the context it can govern."),
     ("method", method, "How I run an engagement", "Nine engagement blocks as a staircase."),
 ]
-README_ORDER = ["hero", "metrics", "maturity", "evolution", "awards", "approach", "tabs-airlines", "uc-airlines-1",
+README_ORDER = ["hero", "maturity", "evolution", "awards", "approach", "tabs-airlines", "uc-airlines-1",
                 "wf-airlines-1", "concepts", "agents", "stack", "writing"]
 
 

@@ -1,17 +1,12 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=9e96108b">
-  <img alt="I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg?v=1e2c2ce3" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=0f3279dc">
+  <img alt="I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg?v=76b32f66" width="100%">
 </picture>
 
 
-**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | ~76% deflection through a 14× launch surge | 13+ yrs SaaS · APJ SE of the Year
+**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | 13+ yrs SaaS · 2+ yrs enterprise AI | APJ SE of the Year
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=151515)](https://www.linkedin.com/in/shivaji-m-d-ab983a65) [![Email](https://img.shields.io/badge/Email-shiv.shivaji090%40gmail.com-FDF049?style=for-the-badge&logo=gmail&logoColor=151515&labelColor=151515)](mailto:shiv.shivaji090@gmail.com)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg?v=17df8ac9">
-  <img alt="Under 5 minutes per airline payments-desk case, down from 15-30; 16+ systems unified into one governed context; +50% conversion to proposal stage at MoEngage; 70+ BFSI projects; 13+ years in SaaS across engineering, customer success, presales and AI solutions." src="assets/metrics-light.svg?v=72148a47" width="100%">
-</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/maturity-dark.svg?v=2dbf88a0">
