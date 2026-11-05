@@ -121,9 +121,9 @@ def readme(panels):
         f"<details>\n{acc_summary(slug, label)}\n\n"
         + "\n".join(case_block(slug, label, n, c, "assets/") for n, c in enumerate(CASES[slug], 1))
         + f"\n[Open the {label} page](use-cases/{slug}.md)\n\n</details>\n" for slug, label in TABS)
-    HEADLINE = ["AI Solutions Engineer · Forward-deployed", "Applied AI, CXO discovery → production",
-                "Agentic & GenAI on messy enterprise stacks", "Evals & guardrails before go-live",
-                "~76% deflection through a 14× launch surge", "Python · TypeScript · MCP"]
+    HEADLINE = ["AI Solutions Engineer", "Context layer first, agents on top",
+                "Agentic AI across complex enterprise systems", "Guardrails, evals and human gates built in",
+                "~76% deflection through a 14× launch surge", "13+ yrs SaaS · APJ SE of the Year"]
     badges = (f"[![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin"
               f"&logoColor=white&labelColor=151515)]({LINKEDIN}) "
               f"[![Email](https://img.shields.io/badge/Email-{quote(EMAIL.replace('-', '--'))}-FDF049?style=for-the-badge"

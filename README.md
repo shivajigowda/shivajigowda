@@ -4,7 +4,7 @@
 </picture>
 
 
-**AI Solutions Engineer · Forward-deployed** | Applied AI, CXO discovery → production | Agentic & GenAI on messy enterprise stacks | Evals & guardrails before go-live | ~76% deflection through a 14× launch surge | Python · TypeScript · MCP
+**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | ~76% deflection through a 14× launch surge | 13+ yrs SaaS · APJ SE of the Year
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=151515)](https://www.linkedin.com/in/shivaji-m-d-ab983a65) [![Email](https://img.shields.io/badge/Email-shiv.shivaji090%40gmail.com-FDF049?style=for-the-badge&logo=gmail&logoColor=151515&labelColor=151515)](mailto:shiv.shivaji090@gmail.com)
 
