@@ -47,16 +47,16 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-retail-d2c-2-dark.svg">
-  <img alt="Retail & D2C use case: Customer-experience agent (live). Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge. KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="../assets/uc-retail-d2c-2-light.svg" width="100%">
+  <img alt="Retail & D2C use case: Customer-experience agent. Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge. KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="../assets/uc-retail-d2c-2-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/wf-retail-d2c-2-dark.svg">
-  <img alt="Solution workflow (hybrid) for Customer-experience agent (live): 1 trigger: Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory; 2 agent: Understands the request in natural language and picks a skill → skill call; 3 skill: Reads live order, tracking, refund or catalogue data from the source systems → verified facts; 4 decision: Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8; 5 skill: Checks per-item eligibility against window and policy → verdict; 6 decision: Eligible? yes → step 7 / no → step 9; 7 skill: Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems; 8 agent: Replies with status, answer or product results → resolved conversation (deflected); 9 human: Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution; 10 outcome: Self-served conversation or escalated case with full context → deflection and zero broken journeys" src="../assets/wf-retail-d2c-2-light.svg" width="100%">
+  <img alt="Solution workflow (hybrid) for Customer-experience agent: 1 trigger: Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory; 2 agent: Understands the request in natural language and picks a skill → skill call; 3 skill: Reads live order, tracking, refund or catalogue data from the source systems → verified facts; 4 decision: Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8; 5 skill: Checks per-item eligibility against window and policy → verdict; 6 decision: Eligible? yes → step 7 / no → step 9; 7 skill: Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems; 8 agent: Replies with status, answer or product results → resolved conversation (deflected); 9 human: Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution; 10 outcome: Self-served conversation or escalated case with full context → deflection and zero broken journeys" src="../assets/wf-retail-d2c-2-light.svg" width="100%">
 </picture>
 
 <details>
-<summary>Workflow steps as text: Customer-experience agent (live)</summary>
+<summary>Workflow steps as text: Customer-experience agent</summary>
 
 1. **Trigger** (loop step 2): Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory
 2. **Agent** (loop step 4): Understands the request in natural language and picks a skill → skill call
@@ -71,7 +71,7 @@
 
 </details>
 
-**Customer-experience agent (live)** · ~76% deflection through ~14x surge
+**Customer-experience agent** · ~76% deflection through ~14x surge
 
 - Problem: Brittle 95-node bot could not absorb launch-surge support
 - AI did: Chose skills; answered orders, returns, refunds in natural language

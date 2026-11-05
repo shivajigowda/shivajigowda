@@ -63,10 +63,10 @@ Click any card to open its full page (architecture and step-by-step workflow), o
 
 <p align="center">
 <a href="use-cases/airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-airlines-1-dark.svg"><img alt="Airlines: Payments desk transformation. Outcome: Under 5 min per case. Click to open." src="assets/tz-airlines-1-light.svg" width="32%"></picture></a>
-<a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-bfsi-fintech-1-dark.svg"><img alt="BFSI & Fintech: Order-to-cash SaaS support PoC. Outcome: Fewer avoidable tickets. Click to open." src="assets/tz-bfsi-fintech-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-bfsi-fintech-1-dark.svg"><img alt="BFSI & Fintech: Order-to-cash SaaS support automation. Outcome: Fewer avoidable tickets. Click to open." src="assets/tz-bfsi-fintech-1-light.svg" width="32%"></picture></a>
 <a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-bfsi-fintech-2-dark.svg"><img alt="BFSI & Fintech: NBFC customer support transformation. Outcome: Fewer manual touches, safe automation. Click to open." src="assets/tz-bfsi-fintech-2-light.svg" width="32%"></picture></a>
 <a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-retail-d2c-1-dark.svg"><img alt="Retail & D2C: Apparel retail AI transformation. Outcome: Automated explainable close; availability above 98%. Click to open." src="assets/tz-retail-d2c-1-light.svg" width="32%"></picture></a>
-<a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-retail-d2c-2-dark.svg"><img alt="Retail & D2C: Customer-experience agent (live). Outcome: ~76% deflection through ~14x surge. Click to open." src="assets/tz-retail-d2c-2-light.svg" width="32%"></picture></a>
+<a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-retail-d2c-2-dark.svg"><img alt="Retail & D2C: Customer-experience agent. Outcome: ~76% deflection through ~14x surge. Click to open." src="assets/tz-retail-d2c-2-light.svg" width="32%"></picture></a>
 <a href="use-cases/automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-automotive-1-dark.svg"><img alt="Automotive: Dealer assist & navigation. Outcome: Faster dealer self-service, no re-asking. Click to open." src="assets/tz-automotive-1-light.svg" width="32%"></picture></a>
 <a href="use-cases/pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-pharma-1-dark.svg"><img alt="Pharma: Production planning & plant / machine optimization. Outcome: Plan in about 1 hour, 80%+ effort cut, fewer batches and changeovers. Click to open." src="assets/tz-pharma-1-light.svg" width="32%"></picture></a>
 <a href="use-cases/pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-pharma-2-dark.svg"><img alt="Pharma: Conversational analytics (sales & market data). Outcome: Self-serve answers, 99%+ consistency, transparent cost. Click to open." src="assets/tz-pharma-2-light.svg" width="32%"></picture></a>
@@ -122,16 +122,16 @@ Click any card to open its full page (architecture and step-by-step workflow), o
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-bfsi-fintech-1-dark.svg">
-  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets. KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="assets/uc-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support automation. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets. KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="assets/uc-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/wf-bfsi-fintech-1-dark.svg">
-  <img alt="Solution workflow (conversational) for Order-to-cash SaaS support PoC: 1 trigger: User opens the embedded chat widget with a verified identity (user and tenant) → session; 2 user: Asks a product, how-to or account question → request; 3 agent: Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer; 4 decision: Account-specific issue? yes → step 5 / no → step 8; 5 guardrail: Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope; 6 skill: Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons; 7 agent: Explains each reason then the fix → explained answer; 8 decision: User confirms it helped? yes → close without ticket / no → step 9; 9 human: User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket; 10 outcome: Fewer avoidable tickets and cleaner handoffs → lower support load" src="assets/wf-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="Solution workflow (conversational) for Order-to-cash SaaS support automation: 1 trigger: User opens the embedded chat widget with a verified identity (user and tenant) → session; 2 user: Asks a product, how-to or account question → request; 3 agent: Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer; 4 decision: Account-specific issue? yes → step 5 / no → step 8; 5 guardrail: Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope; 6 skill: Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons; 7 agent: Explains each reason then the fix → explained answer; 8 decision: User confirms it helped? yes → close without ticket / no → step 9; 9 human: User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket; 10 outcome: Fewer avoidable tickets and cleaner handoffs → lower support load" src="assets/wf-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <details>
-<summary>Workflow steps as text: Order-to-cash SaaS support PoC</summary>
+<summary>Workflow steps as text: Order-to-cash SaaS support automation</summary>
 
 1. **Trigger** (loop step 2): User opens the embedded chat widget with a verified identity (user and tenant) → session
 2. **User** (loop step 2): Asks a product, how-to or account question → request
@@ -146,7 +146,7 @@ Click any card to open its full page (architecture and step-by-step workflow), o
 
 </details>
 
-**Order-to-cash SaaS support PoC** · Fewer avoidable tickets
+**Order-to-cash SaaS support automation** · Fewer avoidable tickets
 
 - Problem: Rising in-app tickets for questions articles or data could resolve
 - AI did: Answered how-tos, diagnosed tenant issues, categorized tickets
@@ -229,16 +229,16 @@ Click any card to open its full page (architecture and step-by-step workflow), o
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-retail-d2c-2-dark.svg">
-  <img alt="Retail & D2C use case: Customer-experience agent (live). Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge. KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="assets/uc-retail-d2c-2-light.svg" width="100%">
+  <img alt="Retail & D2C use case: Customer-experience agent. Problem: Brittle 95-node bot could not absorb launch-surge support. AI did: Chose skills; answered orders, returns, refunds in natural language. Solution did: Unified four systems; one re-skinnable agent; human escalation wired. Business outcome: ~76% deflection through ~14x surge. KPI: cost. Architecture: Storefront · shipping · returns · tracking → Sync layer: one customer record → Identity + cross-channel memory → CX agent, 8 skills → WhatsApp + email; human team." src="assets/uc-retail-d2c-2-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/wf-retail-d2c-2-dark.svg">
-  <img alt="Solution workflow (hybrid) for Customer-experience agent (live): 1 trigger: Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory; 2 agent: Understands the request in natural language and picks a skill → skill call; 3 skill: Reads live order, tracking, refund or catalogue data from the source systems → verified facts; 4 decision: Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8; 5 skill: Checks per-item eligibility against window and policy → verdict; 6 decision: Eligible? yes → step 7 / no → step 9; 7 skill: Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems; 8 agent: Replies with status, answer or product results → resolved conversation (deflected); 9 human: Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution; 10 outcome: Self-served conversation or escalated case with full context → deflection and zero broken journeys" src="assets/wf-retail-d2c-2-light.svg" width="100%">
+  <img alt="Solution workflow (hybrid) for Customer-experience agent: 1 trigger: Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory; 2 agent: Understands the request in natural language and picks a skill → skill call; 3 skill: Reads live order, tracking, refund or catalogue data from the source systems → verified facts; 4 decision: Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8; 5 skill: Checks per-item eligibility against window and policy → verdict; 6 decision: Eligible? yes → step 7 / no → step 9; 7 skill: Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems; 8 agent: Replies with status, answer or product results → resolved conversation (deflected); 9 human: Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution; 10 outcome: Self-served conversation or escalated case with full context → deflection and zero broken journeys" src="assets/wf-retail-d2c-2-light.svg" width="100%">
 </picture>
 
 <details>
-<summary>Workflow steps as text: Customer-experience agent (live)</summary>
+<summary>Workflow steps as text: Customer-experience agent</summary>
 
 1. **Trigger** (loop step 2): Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory
 2. **Agent** (loop step 4): Understands the request in natural language and picks a skill → skill call
@@ -253,7 +253,7 @@ Click any card to open its full page (architecture and step-by-step workflow), o
 
 </details>
 
-**Customer-experience agent (live)** · ~76% deflection through ~14x surge
+**Customer-experience agent** · ~76% deflection through ~14x surge
 
 - Problem: Brittle 95-node bot could not absorb launch-surge support
 - AI did: Chose skills; answered orders, returns, refunds in natural language

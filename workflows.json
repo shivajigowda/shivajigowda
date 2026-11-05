@@ -48,51 +48,6 @@
    ]
   ]
  },
- "order-to-cash SaaS support PoC": {
-  "type": "conversational",
-  "steps": [
-   [
-    "TRIGGER",
-    "User opens the embedded chat widget with a verified identity (user and tenant) → session"
-   ],
-   [
-    "USER",
-    "Asks a product, how-to or account question → request"
-   ],
-   [
-    "AGENT",
-    "Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer"
-   ],
-   [
-    "DECISION",
-    "Account-specific issue? yes → step 5 / no → step 8"
-   ],
-   [
-    "GUARDRAIL",
-    "Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope"
-   ],
-   [
-    "SKILL",
-    "Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons"
-   ],
-   [
-    "AGENT",
-    "Explains each reason then the fix → explained answer"
-   ],
-   [
-    "DECISION",
-    "User confirms it helped? yes → close without ticket / no → step 9"
-   ],
-   [
-    "HUMAN",
-    "User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket"
-   ],
-   [
-    "OUTCOME",
-    "Fewer avoidable tickets and cleaner handoffs → lower support load"
-   ]
-  ]
- },
  "NBFC customer support transformation": {
   "type": "event-triggered",
   "steps": [
@@ -184,51 +139,6 @@
    [
     "OUTCOME",
     "Automated explainable monthly close and earlier stock-out flags → time and working-capital gains"
-   ]
-  ]
- },
- "customer-experience agent (live)": {
-  "type": "hybrid",
-  "steps": [
-   [
-    "TRIGGER",
-    "Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory"
-   ],
-   [
-    "AGENT",
-    "Understands the request in natural language and picks a skill → skill call"
-   ],
-   [
-    "SKILL",
-    "Reads live order, tracking, refund or catalogue data from the source systems → verified facts"
-   ],
-   [
-    "DECISION",
-    "Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8"
-   ],
-   [
-    "SKILL",
-    "Checks per-item eligibility against window and policy → verdict"
-   ],
-   [
-    "DECISION",
-    "Eligible? yes → step 7 / no → step 9"
-   ],
-   [
-    "SKILL",
-    "Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems"
-   ],
-   [
-    "AGENT",
-    "Replies with status, answer or product results → resolved conversation (deflected)"
-   ],
-   [
-    "HUMAN",
-    "Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution"
-   ],
-   [
-    "OUTCOME",
-    "Self-served conversation or escalated case with full context → deflection and zero broken journeys"
    ]
   ]
  },
@@ -417,6 +327,96 @@
    [
     "OUTCOME",
     "Alert-to-customer notice and human touch-time under 5 minutes → more customers per team"
+   ]
+  ]
+ },
+ "order-to-cash saas support automation": {
+  "type": "conversational",
+  "steps": [
+   [
+    "TRIGGER",
+    "User opens the embedded chat widget with a verified identity (user and tenant) → session"
+   ],
+   [
+    "USER",
+    "Asks a product, how-to or account question → request"
+   ],
+   [
+    "AGENT",
+    "Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer"
+   ],
+   [
+    "DECISION",
+    "Account-specific issue? yes → step 5 / no → step 8"
+   ],
+   [
+    "GUARDRAIL",
+    "Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope"
+   ],
+   [
+    "SKILL",
+    "Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons"
+   ],
+   [
+    "AGENT",
+    "Explains each reason then the fix → explained answer"
+   ],
+   [
+    "DECISION",
+    "User confirms it helped? yes → close without ticket / no → step 9"
+   ],
+   [
+    "HUMAN",
+    "User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket"
+   ],
+   [
+    "OUTCOME",
+    "Fewer avoidable tickets and cleaner handoffs → lower support load"
+   ]
+  ]
+ },
+ "customer-experience agent": {
+  "type": "hybrid",
+  "steps": [
+   [
+    "TRIGGER",
+    "Shopper sends a message on messaging or email → conversation opened with unified identity and cross-channel memory"
+   ],
+   [
+    "AGENT",
+    "Understands the request in natural language and picks a skill → skill call"
+   ],
+   [
+    "SKILL",
+    "Reads live order, tracking, refund or catalogue data from the source systems → verified facts"
+   ],
+   [
+    "DECISION",
+    "Is the request an action (return, exchange, cancel)? yes → step 5 / no → step 8"
+   ],
+   [
+    "SKILL",
+    "Checks per-item eligibility against window and policy → verdict"
+   ],
+   [
+    "DECISION",
+    "Eligible? yes → step 7 / no → step 9"
+   ],
+   [
+    "SKILL",
+    "Files the return/exchange or cancels the unshipped order and triggers the refund → record in order and returns systems"
+   ],
+   [
+    "AGENT",
+    "Replies with status, answer or product results → resolved conversation (deflected)"
+   ],
+   [
+    "HUMAN",
+    "Receives handover with sentiment and severity classification, works the chat or ticket with SLA and CSAT → human resolution"
+   ],
+   [
+    "OUTCOME",
+    "Self-served conversation or escalated case with full context → deflection and zero broken journeys"
    ]
   ]
  }

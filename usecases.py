@@ -19,7 +19,7 @@ CASES = {
         arch=["CRM case", "AI workspace chat", "Payment gateway + reservation system", "Human confirms",
               "Payment link → booking ref", "CRM auto-close"])],
     "bfsi-fintech": [
-        dict(use="Order-to-cash SaaS support PoC",
+        dict(use="Order-to-cash SaaS support automation",
              problem="Rising in-app tickets for questions articles or data could resolve",
              ai="Answered how-tos, diagnosed tenant issues, categorized tickets",
              solution="Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy",
@@ -42,7 +42,7 @@ CASES = {
              outcome="Automated explainable close; availability above 98%", tag="M1–M3 · L3", kpi="time",
              arch=["ERP · DMS · POS · e-commerce", "Sync connectors + quality gates", "Knowledge graph",
                    "Area agents + workflow engine", "App · chat · export"]),
-        dict(use="Customer-experience agent (live)",
+        dict(use="Customer-experience agent",
              problem="Brittle 95-node bot could not absorb launch-surge support",
              ai="Chose skills; answered orders, returns, refunds in natural language",
              solution="Unified four systems; one re-skinnable agent; human escalation wired",

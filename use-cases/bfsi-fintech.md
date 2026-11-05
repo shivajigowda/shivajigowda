@@ -14,16 +14,16 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-bfsi-fintech-1-dark.svg">
-  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets. KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="../assets/uc-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support automation. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets. KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="../assets/uc-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/wf-bfsi-fintech-1-dark.svg">
-  <img alt="Solution workflow (conversational) for Order-to-cash SaaS support PoC: 1 trigger: User opens the embedded chat widget with a verified identity (user and tenant) → session; 2 user: Asks a product, how-to or account question → request; 3 agent: Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer; 4 decision: Account-specific issue? yes → step 5 / no → step 8; 5 guardrail: Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope; 6 skill: Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons; 7 agent: Explains each reason then the fix → explained answer; 8 decision: User confirms it helped? yes → close without ticket / no → step 9; 9 human: User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket; 10 outcome: Fewer avoidable tickets and cleaner handoffs → lower support load" src="../assets/wf-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="Solution workflow (conversational) for Order-to-cash SaaS support automation: 1 trigger: User opens the embedded chat widget with a verified identity (user and tenant) → session; 2 user: Asks a product, how-to or account question → request; 3 agent: Answers from help articles, approved Q&A and SOPs, giving name, path and button label → answer; 4 decision: Account-specific issue? yes → step 5 / no → step 8; 5 guardrail: Tenant taken from verified identity only; any user-supplied tenant or customer ID is ignored → isolated scope; 6 skill: Runs read-only diagnosis queries (customer lookup, pool status, collectible status, ranking filter) → reasons; 7 agent: Explains each reason then the fix → explained answer; 8 decision: User confirms it helped? yes → close without ticket / no → step 9; 9 human: User confirms an agent-drafted, categorized summary; ticket is created and linked to the conversation; support reviews per tier → categorized ticket; 10 outcome: Fewer avoidable tickets and cleaner handoffs → lower support load" src="../assets/wf-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <details>
-<summary>Workflow steps as text: Order-to-cash SaaS support PoC</summary>
+<summary>Workflow steps as text: Order-to-cash SaaS support automation</summary>
 
 1. **Trigger** (loop step 2): User opens the embedded chat widget with a verified identity (user and tenant) → session
 2. **User** (loop step 2): Asks a product, how-to or account question → request
@@ -38,7 +38,7 @@
 
 </details>
 
-**Order-to-cash SaaS support PoC** · Fewer avoidable tickets
+**Order-to-cash SaaS support automation** · Fewer avoidable tickets
 
 - Problem: Rising in-app tickets for questions articles or data could resolve
 - AI did: Answered how-tos, diagnosed tenant issues, categorized tickets
