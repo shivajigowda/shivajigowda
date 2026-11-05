@@ -1,10 +1,10 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=2e1240e4">
-  <img alt="I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg?v=edcd2173" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=5e97b7e7">
+  <img alt="I turn enterprise context into AI that acts. Animated: ERP, CRM, ticketing, HR, commerce, logistics, voice and knowledge bubbles feed a glowing enterprise-context core; an agent below it fires actions: deflect, resolve, automate." src="assets/hero-light.svg?v=79f43820" width="100%">
 </picture>
 
 
-**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | 13+ yrs SaaS · 5+ yrs AI · 3+ yrs GenAI | APJ SE of the Year
+**AI Solutions Engineer** | Context layer first, agents on top | Agentic AI across complex enterprise systems | Guardrails, evals and human gates built in | 13+ yrs overall · 5+ yrs enterprise AI | APJ SE of the Year
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shivaji--md-6E22FE?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=151515)](https://www.linkedin.com/in/shivaji-m-d-ab983a65) [![Email](https://img.shields.io/badge/Email-shiv.shivaji090%40gmail.com-FDF049?style=for-the-badge&logo=gmail&logoColor=151515&labelColor=151515)](mailto:shiv.shivaji090@gmail.com)
 
