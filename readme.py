@@ -190,9 +190,24 @@ renders previews). Client names are left out on purpose: industries and generic 
 """
 
 
+def _versioned(md, base_dir):
+    """Append ?v=<content hash> to every local .svg reference so GitHub and browsers never serve stale panels."""
+    import hashlib
+    import re
+
+    def tag(m):
+        ref = m.group(2)
+        f = (base_dir / ref).resolve()
+        if not f.exists():
+            return m.group(0)
+        v = hashlib.sha1(f.read_bytes()).hexdigest()[:8]
+        return f'{m.group(1)}="{ref}?v={v}"'
+    return re.sub(r'(src|srcset)="((?:\.\./)?assets/[^"?]+\.svg)"', tag, md)
+
+
 def write_all(root, panels):
-    (root / "README.md").write_text(readme(panels), encoding="utf-8")
+    (root / "README.md").write_text(_versioned(readme(panels), root), encoding="utf-8")
     pages = root / "use-cases"
     pages.mkdir(exist_ok=True)
     for slug, label in TABS:
-        (pages / f"{slug}.md").write_text(industry_page(slug, label), encoding="utf-8")
+        (pages / f"{slug}.md").write_text(_versioned(industry_page(slug, label), pages), encoding="utf-8")
