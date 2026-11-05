@@ -65,6 +65,30 @@ def _status(outcome):
     return "pilot"
 
 
+def teaser(T, industry, case):
+    """Compact grid card: industry, use case, outcome, status; the whole image links to the full page."""
+    W_, H_ = 292, 228
+    st = _status(case["outcome"])
+    sfill = {"achieved": T["grn"], "target": T["yellow"], "proposal": T["bubbles"]["peach"][0],
+             "pilot": T["bubbles"]["sky"][0]}[st]
+    sink = {"achieved": "#0F4C00", "target": "#151515", "proposal": T["bubbles"]["peach"][1],
+            "pilot": T["bubbles"]["sky"][1]}[st]
+    o = [rect(1, 1, W_ - 2, H_ - 2, T["card"], T["card_line"], 1.2, 18),
+         rect(18, 0, 56, 4, T["purple_fill"], rx=2),
+         text(18, 30, industry.upper(), T["purple"], 9.5, 700, font="mono", spacing=1.6)]
+    for j, line in enumerate(wrap(case["use"], W_ - 36, 16, 800)[:2]):
+        o.append(text(18, 58 + j * 20, line, T["ink"], 16, 800, font="display", spacing=-0.2))
+    out = case["outcome"]
+    rows = wrap(out, W_ - 60, 12, 700)[:3]
+    oy = 104
+    o += [rect(14, oy, W_ - 28, 20 + 16 * len(rows), T["yellow_soft"], None, 1, 12),
+          text(26, oy + 18, "→", T["gold"], 12, 800, font="display")]
+    o += [text(42, oy + 18 + k * 16, r, T["ink"], 12, 700, font="display") for k, r in enumerate(rows)]
+    s, _ = chip(18, H_ - 44, st, sfill, sink, 9.5, 24, weight=700, font="mono")
+    o += [s, text(W_ - 18, H_ - 27, "OPEN →", T["purple"], 10, 700, "end", "mono", spacing=1.6)]
+    return W_, H_, "".join(o)
+
+
 def case_card(T, industry, case, index):
     from panels_solution import _styles
     cells = [case["problem"], case["ai"], case["solution"], case["outcome"]]

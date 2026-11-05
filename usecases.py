@@ -23,7 +23,7 @@ CASES = {
              problem="Rising in-app tickets for questions articles or data could resolve",
              ai="Answered how-tos, diagnosed tenant issues, categorized tickets",
              solution="Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy",
-             outcome="Fewer avoidable tickets (pilot to measure; no target)", tag="M2 · L3", kpi="cost",
+             outcome="Fewer avoidable tickets (pilot will measure)", tag="M2 · L3", kpi="cost",
              arch=["In-app chat, verified identity", "Support agent + KB", "Read-only diagnosis API",
                    "Confirm summary", "Tiered automation"]),
         dict(use="NBFC customer support transformation",
@@ -54,7 +54,7 @@ CASES = {
         use="Dealer assist & navigation", problem="Dealers hit repeat system errors with scripted fixes",
         ai="Ran the right procedure from a pre-set starting turn",
         solution="Button tree, 35 handoff contracts, no-re-ask context payloads",
-        outcome="Faster dealer self-service (no KPI stated)", tag="M2 · L2 (inferred)", kpi="time",
+        outcome="Faster dealer self-service, no re-asking (pilot)", tag="M2 · L2 (inferred)", kpi="time",
         arch=["Dealer-system chat widget", "Greeting + 5 buttons", "Handoff context payload",
               "Agent runs procedure", "Outcome + rating"])],
     "pharma": [
@@ -88,7 +88,7 @@ CASES = {
         problem="Right message, right user, right time, right channel (BFSI and retail)",
         ai="Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B",
         solution="SDKs + Data API + warehouse imports, RFM segments, Flows (journeys)",
-        outcome="Lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)", tag="M1–M2 · L2", kpi="revenue",
+        outcome="MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)", tag="M1–M2 · L2", kpi="revenue",
         arch=["SDKs + Data API", "Warehouse + S3/SFTP imports", "RFM segments", "Sherpa: BTS · MPC · predictions",
               "Flows + Dynamic A/B"])],
 }

@@ -27,7 +27,7 @@
 <summary><b>Text version: how I evolved</b></summary>
 
 - **2024–now · AI Solutions Engineer, DevRev → architect** (Generative & agentic AI, journey: ai evangelist). Pipeline: 16+ connectors → Governed context → Multi-agent → Evals + guardrails → outcomes: Hours saved ↑, Cost to serve ↓, Revenue ↑, CSAT ↑. concepts: Context layer, Multi-agent orchestration, Evals, Guardrails, Act-as identity, Retrieval, not stuffing. Learned: The model is a component; the solution is the product.
-- **2021–2024 · Presales Manager → Lead Solutions Consulting, MoEngage · promoted Feb 2023** (Predictive ML, journey: expanding ai). Pipeline: SDKs + Data API → Warehouse sync → RFM segments → Sherpa models → outcomes: MAU ↑, CTR ↑, CVR ↑, Retention ↑. data in: Android/iOS/Web SDKs, Data API (server events), S3/SFTP imports, Warehouse (BigQuery/Snowflake/Redshift), CDP sources; sherpa (now merlin ai): Best Time to Send, Most Preferred Channel, Predictions (churn & conversion), Dynamic A/B (bandit-style), RFM segments (1–3 per axis), Flows (journeys). Learned: AI is only as good as the event data feeding it.
+- **2021–2024 · Presales Manager → Lead Solutions Consulting, MoEngage · promoted Feb 2023** (Predictive ML, journey: expanding ai). Pipeline: SDKs + Data API → Warehouse sync → RFM segments → Sherpa models → outcomes: MAU / DAU ↑, Retention ↑, CTR ↑, CVR ↑. data in: Android/iOS/Web SDKs, Data API (server events), S3/SFTP imports, Warehouse (BigQuery/Snowflake/Redshift), CDP sources; sherpa (now merlin ai): Best Time to Send, Most Preferred Channel, Predictions (churn & conversion), Dynamic A/B (bandit-style), RFM segments (1–3 per axis), Flows (journeys). Learned: AI is only as good as the event data feeding it.
 
 Explainers I used with customers (general techniques, not vendor claims): propensity models are typically gradient-boosted trees; behavioral clustering, e.g. k-means; a multi-armed bandit shifts traffic to the winning variant while still exploring; RFM scores recency, frequency and monetary value; aggregations turn event streams into features (counts, recency, rolling windows).
 
@@ -59,15 +59,25 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 ## AI use cases I've solutioned
 
+Click any card to open its full page (architecture and step-by-step workflow), or expand an industry below.
+
 <p align="center">
-<a href="use-cases/airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-airlines-on-dark.svg"><img alt="Airlines" src="assets/tab-airlines-on-light.svg" height="40"></picture></a>
-<a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-bfsi-fintech-off-dark.svg"><img alt="BFSI & Fintech" src="assets/tab-bfsi-fintech-off-light.svg" height="40"></picture></a>
-<a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-retail-d2c-off-dark.svg"><img alt="Retail & D2C" src="assets/tab-retail-d2c-off-light.svg" height="40"></picture></a>
-<a href="use-cases/automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-automotive-off-dark.svg"><img alt="Automotive" src="assets/tab-automotive-off-light.svg" height="40"></picture></a>
-<a href="use-cases/pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-pharma-off-dark.svg"><img alt="Pharma" src="assets/tab-pharma-off-light.svg" height="40"></picture></a>
-<a href="use-cases/it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-it-services-off-dark.svg"><img alt="IT services" src="assets/tab-it-services-off-light.svg" height="40"></picture></a>
-<a href="use-cases/marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tab-marketing-off-dark.svg"><img alt="Marketing" src="assets/tab-marketing-off-light.svg" height="40"></picture></a>
+<a href="use-cases/airlines.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-airlines-1-dark.svg"><img alt="Airlines: Payments desk transformation. Outcome: Under 5 min per case (target). Click to open." src="assets/tz-airlines-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-bfsi-fintech-1-dark.svg"><img alt="BFSI & Fintech: Order-to-cash SaaS support PoC. Outcome: Fewer avoidable tickets (pilot will measure). Click to open." src="assets/tz-bfsi-fintech-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/bfsi-fintech.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-bfsi-fintech-2-dark.svg"><img alt="BFSI & Fintech: NBFC customer support transformation. Outcome: Fewer manual touches, safe automation (targets). Click to open." src="assets/tz-bfsi-fintech-2-light.svg" width="32%"></picture></a>
+<a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-retail-d2c-1-dark.svg"><img alt="Retail & D2C: Apparel retail AI transformation. Outcome: Automated explainable close; availability above 98% (targets). Click to open." src="assets/tz-retail-d2c-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/retail-d2c.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-retail-d2c-2-dark.svg"><img alt="Retail & D2C: Customer-experience agent (live). Outcome: ~76% deflection through ~14x surge (achieved). Click to open." src="assets/tz-retail-d2c-2-light.svg" width="32%"></picture></a>
+<a href="use-cases/automotive.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-automotive-1-dark.svg"><img alt="Automotive: Dealer assist & navigation. Outcome: Faster dealer self-service, no re-asking (pilot). Click to open." src="assets/tz-automotive-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-pharma-1-dark.svg"><img alt="Pharma: Production planning & plant / machine optimization. Outcome: Plan in about 1 hour, 80%+ effort cut, fewer batches and changeovers (targets). Click to open." src="assets/tz-pharma-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/pharma.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-pharma-2-dark.svg"><img alt="Pharma: Conversational analytics (sales & market data). Outcome: Self-serve answers, 99%+ consistency, transparent cost (targets). Click to open." src="assets/tz-pharma-2-light.svg" width="32%"></picture></a>
+<a href="use-cases/it-services.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-it-services-1-dark.svg"><img alt="IT services: Cloud managed-services support transformation. Outcome: Under 5 min, 2x customers per team (targets). Click to open." src="assets/tz-it-services-1-light.svg" width="32%"></picture></a>
+<a href="use-cases/marketing.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tz-marketing-1-dark.svg"><img alt="Marketing: Predictive marketing at MoEngage (2021–24). Outcome: MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved). Click to open." src="assets/tz-marketing-1-light.svg" width="32%"></picture></a>
 </p>
+
+### Full details by industry
+
+<details>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-airlines-dark.svg"><img alt="Airlines: click to open" src="assets/acc-airlines-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-airlines-1-dark.svg">
@@ -103,12 +113,16 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 - Solution did: Integrated three systems; human confirm gates; escalation matrix and audits
 - Architecture: CRM case → AI workspace chat → Payment gateway + reservation system → Human confirms → Payment link → booking ref → CRM auto-close
 
+[Open the Airlines page](use-cases/airlines.md)
+
+</details>
+
 <details>
 <summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/acc-bfsi-fintech-dark.svg"><img alt="BFSI & Fintech: click to open" src="assets/acc-bfsi-fintech-light.svg" width="100%"></picture></summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-bfsi-fintech-1-dark.svg">
-  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot to measure; no target). KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="assets/uc-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot will measure). KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="assets/uc-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -132,7 +146,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Order-to-cash SaaS support PoC** · Fewer avoidable tickets (pilot to measure; no target)
+**Order-to-cash SaaS support PoC** · Fewer avoidable tickets (pilot will measure)
 
 - Problem: Rising in-app tickets for questions articles or data could resolve
 - AI did: Answered how-tos, diagnosed tenant issues, categorized tickets
@@ -255,7 +269,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-automotive-1-dark.svg">
-  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service (no KPI stated). KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="assets/uc-automotive-1-light.svg" width="100%">
+  <img alt="Automotive use case: Dealer assist & navigation. Problem: Dealers hit repeat system errors with scripted fixes. AI did: Ran the right procedure from a pre-set starting turn. Solution did: Button tree, 35 handoff contracts, no-re-ask context payloads. Business outcome: Faster dealer self-service, no re-asking (pilot). KPI: time. Architecture: Dealer-system chat widget → Greeting + 5 buttons → Handoff context payload → Agent runs procedure → Outcome + rating." src="assets/uc-automotive-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -279,7 +293,7 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 </details>
 
-**Dealer assist & navigation** · Faster dealer self-service (no KPI stated)
+**Dealer assist & navigation** · Faster dealer self-service, no re-asking (pilot)
 
 - Problem: Dealers hit repeat system errors with scripted fixes
 - AI did: Ran the right procedure from a pre-set starting turn
@@ -410,10 +424,10 @@ Explainers I used with customers (general techniques, not vendor claims): propen
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/uc-marketing-1-dark.svg">
-  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: Lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved). KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="assets/uc-marketing-1-light.svg" width="100%">
+  <img alt="Marketing use case: Predictive marketing at MoEngage (2021–24). Problem: Right message, right user, right time, right channel (BFSI and retail). AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B. Solution did: SDKs + Data API + warehouse imports, RFM segments, Flows (journeys). Business outcome: MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved). KPI: revenue. Architecture: SDKs + Data API → Warehouse + S3/SFTP imports → RFM segments → Sherpa: BTS · MPC · predictions → Flows + Dynamic A/B." src="assets/uc-marketing-1-light.svg" width="100%">
 </picture>
 
-**Predictive marketing at MoEngage (2021–24)** · Lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)
+**Predictive marketing at MoEngage (2021–24)** · MAU / DAU ↑ · lifecycle engagement ↑ · retention ↑ · CTR ↑ · CVR ↑ (achieved)
 
 - Problem: Right message, right user, right time, right channel (BFSI and retail)
 - AI did: Sherpa (now Merlin AI): Best Time to Send, Most Preferred Channel, Predictions, Dynamic A/B

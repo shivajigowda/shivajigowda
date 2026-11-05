@@ -21,7 +21,7 @@ ERAS = [
      ("Predictive ML", "lilac"), "journey: expanding ai",
      [("SDKs + Data API", "app · web · server"), ("Warehouse sync", "s3 · sftp · cdp"),
       ("RFM segments", "flows (journeys)"), ("Sherpa models", "bts · mpc · predictions")],
-     [("↑", "MAU"), ("↑", "CTR"), ("↑", "CVR"), ("↑", "Retention")],
+     [("↑", "MAU / DAU"), ("↑", "Retention"), ("↑", "CTR"), ("↑", "CVR")],
      [("data in", ["Android/iOS/Web SDKs", "Data API (server events)", "S3/SFTP imports",
                    "Warehouse (BigQuery/Snowflake/Redshift)", "CDP sources"]),
       ("sherpa (now merlin ai)", ["Best Time to Send", "Most Preferred Channel", "Predictions (churn & conversion)",

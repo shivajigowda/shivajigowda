@@ -30,6 +30,18 @@ def tab_buttons(active, link_prefix, asset_prefix):
     return "\n".join(out)
 
 
+def teaser_grid(asset_prefix="assets/", link_prefix="use-cases/"):
+    """3-across grid of teaser cards; each links to its industry page."""
+    cells = []
+    for slug, label in TABS:
+        for n, c in enumerate(CASES[slug], 1):
+            base = f"{asset_prefix}tz-{slug}-{n}"
+            alt_ = f"{label}: {c['use']}. Outcome: {c['outcome']}. Click to open.".replace('"', "'")
+            cells.append(f'<a href="{link_prefix}{slug}.md"><picture><source media="(prefers-color-scheme: dark)" '
+                         f'srcset="{base}-dark.svg"><img alt="{alt_}" src="{base}-light.svg" width="32%"></picture></a>')
+    return "<p align=\"center\">\n" + "\n".join(cells) + "\n</p>"
+
+
 def acc_summary(slug, label, asset_prefix="assets/"):
     base = f"{asset_prefix}acc-{slug}"
     return (f'<summary><picture><source media="(prefers-color-scheme: dark)" srcset="{base}-dark.svg">'
@@ -108,7 +120,7 @@ def readme(panels):
     others = "\n".join(
         f"<details>\n{acc_summary(slug, label)}\n\n"
         + "\n".join(case_block(slug, label, n, c, "assets/") for n, c in enumerate(CASES[slug], 1))
-        + f"\n[Open the {label} page](use-cases/{slug}.md)\n\n</details>\n" for slug, label in TABS[1:])
+        + f"\n[Open the {label} page](use-cases/{slug}.md)\n\n</details>\n" for slug, label in TABS)
     HEADLINE = ["AI Solutions Engineer · Forward-deployed", "Applied AI, CXO discovery → production",
                 "Agentic & GenAI on messy enterprise stacks", "Evals & guardrails before go-live",
                 "~76% deflection through a 14× launch surge", "Python · TypeScript · MCP"]
@@ -145,11 +157,12 @@ def readme(panels):
 
 ## AI use cases I've solutioned
 
-<p align="center">
-{tab_buttons(a_slug, 'use-cases/', 'assets/')}
-</p>
+Click any card to open its full page (architecture and step-by-step workflow), or expand an industry below.
 
-{case_block(a_slug, a_label, 1, CASES[a_slug][0], 'assets/')}
+{teaser_grid()}
+
+### Full details by industry
+
 {others}
 ## Concepts
 

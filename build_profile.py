@@ -20,7 +20,7 @@ from panels_maturity import maturity
 from panels_method import method, stack, writing
 from panels_solution import solution
 from panels_top import hero, metrics
-from panels_usecase import accbtn, case_card, tabbar, tabbtn, workflow
+from panels_usecase import accbtn, case_card, tabbar, tabbtn, teaser, workflow
 from panels_world import constellation, statement
 from readme import case_alt, wf_alt, write_all
 from svgkit import doc
@@ -87,6 +87,8 @@ def dynamic():
         for n, c in enumerate(CASES[slug], 1):
             out.append((f"uc-{slug}-{n}", lambda T, l=label, c=c, n=n: case_card(T, l, c, n), c["use"],
                         case_alt(label, c)))
+            out.append((f"tz-{slug}-{n}", lambda T, l=label, c=c: teaser(T, l, c), c["use"],
+                        f"{label}: {c['use']}. Outcome: {c['outcome']}. Click to open."))
             wf = workflow_for(c["use"])
             if wf:
                 out.append((f"wf-{slug}-{n}", lambda T, c=c, wf=wf: workflow(T, c["use"], wf),

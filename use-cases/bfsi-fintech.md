@@ -14,7 +14,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../assets/uc-bfsi-fintech-1-dark.svg">
-  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot to measure; no target). KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="../assets/uc-bfsi-fintech-1-light.svg" width="100%">
+  <img alt="BFSI & Fintech use case: Order-to-cash SaaS support PoC. Problem: Rising in-app tickets for questions articles or data could resolve. AI did: Answered how-tos, diagnosed tenant issues, categorized tickets. Solution did: Identity-bound tenant isolation, read-only queries, tiered automation, taxonomy. Business outcome: Fewer avoidable tickets (pilot will measure). KPI: cost. Architecture: In-app chat, verified identity → Support agent + KB → Read-only diagnosis API → Confirm summary → Tiered automation." src="../assets/uc-bfsi-fintech-1-light.svg" width="100%">
 </picture>
 
 <picture>
@@ -38,7 +38,7 @@
 
 </details>
 
-**Order-to-cash SaaS support PoC** · Fewer avoidable tickets (pilot to measure; no target)
+**Order-to-cash SaaS support PoC** · Fewer avoidable tickets (pilot will measure)
 
 - Problem: Rising in-app tickets for questions articles or data could resolve
 - AI did: Answered how-tos, diagnosed tenant issues, categorized tickets
