@@ -1,4 +1,4 @@
-"""'My approach': the 7-step problem-solving loop as a relay loop, plus each industry as an instance."""
+"""'My approach': the 7-step problem-solving loop as a relay loop."""
 from svgkit import (arrowhead, card, chip, circle, cubic, dashed, eyebrow, mono_label, para, paper, particle, path,
                     rect, rich, text)
 from textfit import tw
@@ -76,18 +76,6 @@ def approach(T):
           mono_label(x1_ + 24, y7 + h / 2 + 4, "run again →", T["purple"], 8.5, "start", 1.2, 700)]
     for i, ((x, y), (title, desc, kind)) in enumerate(zip(pos, STEPS)):
         o.append(_step(T, x, y, w, h, i, title, desc, kind))
-    # each tab is an instance of the loop
-    sy = top2 + h + 50
-    o.append(mono_label(56, sy, "each industry tab below is one run of the loop", T["muted"], 9, "start", 1.6, 700))
-    cx, cy = 48, sy + 14
-    for ind, note in INSTANCES:
-        lab = f"{ind}: {note}"
-        cw = tw(lab, 12, 600) + 28
-        if cx + cw > 952:
-            cx, cy = 48, cy + 38
-        s, cw = chip(cx, cy, lab, T["card"], T["ink2"], 12, 30, T["card_line"], 600)
-        o.append(s)
-        cx += cw + 10
-    H = cy + 30 + 36
+    H = top2 + h + 46
     o[0] = paper(W, H, T, ((1.02, -0.04, 0.4), (-0.04, 1.03, 0.42)))
     return W, H, "".join(o)

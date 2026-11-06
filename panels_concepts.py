@@ -1,4 +1,4 @@
-"""'How sync actually works': nine concept cards, each with a tiny inline diagram and a 'used in' chip."""
+"""'How sync actually works': nine concept cards, each with a tiny inline diagram."""
 from svgkit import arrowhead, card, chip, circle, el, eyebrow, mono_label, para, paper, path, rect, rich, text
 
 W = 1000
@@ -39,7 +39,7 @@ CONCEPTS = [
      "Every connector", "lilac", "backoff",
      "syncs survive rate limits without manual reruns"),
     ("state", "Checkpoint after verified writes",
-     "Save state only after the upload is verified; offload state past 8 MB to an artifact.",
+     "Save state only after the upload is verified; move large state out of the run into durable storage.",
      "Sync state + artifacts", "lime", "checkpoint",
      "no lost or duplicated data after a crash"),
 ]
@@ -117,17 +117,12 @@ def _card(T, x, y, w, h, i, c, diagram):
     o.append(mono_label(x + 18, y + 184, "→ business", T["muted"], 8.5, "start", 1.4, 700))
     s, _ = para(x + 18, y + 201, biz, T["ink"], 12.5, w - 34, 16, 700)
     o.append(s)
-    lab, lw = chip(x + 18, y + h - 38, "used in", T["ink"] if T["name"] == "light" else "#2E2A42", "#FFFFFF",
-                   8.5, 24, weight=600, font="mono")
-    val, vw = chip(x + 18 + lw + 6, y + h - 38, used, fill, ink, 11.5, 24, weight=600)
-    if lw + 6 + vw > w - 34:  # long value: drop the label, keep the value inside the card
-        lab, (val, _) = "", chip(x + 18, y + h - 38, used, fill, ink, 11.5, 24, weight=600)
-    return "".join(o) + lab + val
+    return "".join(o)
 
 
 def grid(T, eyebrow_text, head, accent, items, diagram, glow_colours=None):
     """3-column concept-card panel shared by the sync and agent panels."""
-    cw, ch, g, top = 290, 278, 17, 150
+    cw, ch, g, top = 290, 246, 17, 150
     rows = -(-len(items) // 3)
     H = top + rows * ch + (rows - 1) * g + 40
     o = [paper(W, H, T, ((1.02, -0.05, 0.36), (-0.04, 1.04, 0.4)), glow_colours),

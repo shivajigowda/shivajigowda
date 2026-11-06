@@ -45,7 +45,7 @@ PANELS = [
      "AI curious, daily AI, expanding AI, AI first, AI evangelist. The AI company journey, running behind it: AI desert, "
      "AI tools, AI initiatives, AI champions, AI platform, AI-centric business."),
     ("evolution", evolution, "How I evolved",
-     "Latest first: 2024-now AI Solutions Engineer at DevRev (generative and agentic AI, L4, M3-M4; airline "
+     "Latest first: 2024-now AI Solutions Engineer at DevRev (generative and agentic AI; airline "
      "payments desk 15-30 to under 5 min per case, target), then 2021-2024 Presales Manager to Lead Solutions Consulting at MoEngage "
      "(predictive ML, L2; +50% conversion to proposal). A dotted line points ahead to "
      "Solutions Architect, governed enterprise AI."),
@@ -74,7 +74,8 @@ README_ORDER = ["hero", "maturity", "evolution", "awards", "approach", "tabs-air
 
 
 def dynamic():
-    """(name, builder(T), title, desc) for tab bars, use-case cards and workflows."""
+    """Use-case panels retired from the profile."""
+    return []
     out = []
     for slug, label in TABS:
         out.append((f"tabs-{slug}", lambda T, s=slug: tabbar(T, s), f"Industry tabs: {label}",

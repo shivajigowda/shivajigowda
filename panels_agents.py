@@ -47,7 +47,7 @@ AGENTS = [
      "Every agent", "yellow", "score",
      "fewer production incidents, faster risk sign-off"),
     ("identity", "Identity and context",
-     "The agent acts as the user, with that user's permissions (act-as), over governed enterprise memory.",
+     "The agent acts as the user, with that user's own permissions, over governed enterprise memory.",
      "Help-desk copilot (act-as)", "pink", "badge",
      "no permission leaks; security signs off sooner"),
     ("voice", "Voice agents",

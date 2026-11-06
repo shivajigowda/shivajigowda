@@ -97,7 +97,7 @@ def industry_page(slug, label):
 
 
 def concept_text(items):
-    return "\n".join(f"{i + 1}. **{c[1]}**: {c[2]} *Business:* {c[6]}. *Used in:* {c[3]}." for i, c in enumerate(items))
+    return "\n".join(f"{i + 1}. **{c[1]}**: {c[2]} *Business:* {c[6]}." for i, c in enumerate(items))
 
 
 def evolution_text():
@@ -153,15 +153,6 @@ def readme(panels):
 
 </details>
 
-## AI use cases I've solutioned
-
-Click any card to open its full page (architecture and step-by-step workflow), or expand an industry below.
-
-{teaser_grid()}
-
-### Full details by industry
-
-{others}
 ## Concepts
 
 <details>
@@ -206,7 +197,5 @@ def _versioned(md, base_dir):
 
 def write_all(root, panels):
     (root / "README.md").write_text(_versioned(readme(panels), root), encoding="utf-8")
-    pages = root / "use-cases"
-    pages.mkdir(exist_ok=True)
-    for slug, label in TABS:
-        (pages / f"{slug}.md").write_text(_versioned(industry_page(slug, label), pages), encoding="utf-8")
+    import shutil
+    shutil.rmtree(root / "use-cases", ignore_errors=True)  # use-case pages retired

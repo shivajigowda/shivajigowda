@@ -44,7 +44,7 @@ def _hero_core(T, cx, cy):
           circle(cx, cy, 52, T["yellow"], "#E2D21F", 1.5),
           text(cx, cy - 2, "enterprise", SUN_INK, 14.5, 800, "middle", "display", spacing=-0.3),
           text(cx, cy + 15, "context", SUN_INK, 14.5, 800, "middle", "display", spacing=-0.3),
-          mono_label(cx, cy + 31, "shared memory", SUN_INK, 7, "middle", 1.2, 600)]
+          mono_label(cx, cy + 31, "governed memory", SUN_INK, 7, "middle", 1.2, 600)]
     return "".join(o)
 
 

@@ -14,7 +14,7 @@ ERAS = [
      [("16+ connectors", "delta sync"), ("Governed context", "graph · permissions"),
       ("Multi-agent", "tools · approvals"), ("Evals + guardrails", "before go-live")],
      [("↑", "Hours saved"), ("↓", "Cost to serve"), ("↑", "Revenue"), ("↑", "CSAT")],
-     [("concepts", ["Context layer", "Multi-agent orchestration", "Evals", "Guardrails", "Act-as identity",
+     [("concepts", ["Context layer", "Multi-agent orchestration", "Evals", "Guardrails", "Per-user identity",
                     "Retrieval, not stuffing"])],
      "The model is a component; the solution is the product."),
     ("2021–2024", "Presales Manager → Lead Solutions Consulting", "MoEngage · promoted Feb 2023",
